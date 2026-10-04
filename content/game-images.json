@@ -15,5 +15,9 @@
   "enshrouded": {
     "steam_app_id": 1203620,
     "credit": "Keen Games / Steam"
+  },
+  "gears-of-war-e-day": {
+    "steam_app_id": 3010850,
+    "credit": "Xbox Game Studios / Steam"
   }
 }

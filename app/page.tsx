@@ -26,18 +26,18 @@ function ReleaseBoard({ games }: { games: Game[] }) {
               {game.article_path ? <Link href={game.article_path} className="text-primary hover:underline">{game.name}</Link> : game.name}
             </h2>
             <p className="mt-2 text-sm text-muted-foreground">{game.platforms.join(', ')}</p>
-            <p className="mt-1 text-sm">PC install: {game.install_size || 'Not announced'}</p>
+            <p className="mt-1 text-sm">Install size: {game.install_size || 'Not announced'}</p>
           </li>
         ))}
       </ul>
       <table className="hidden w-full text-left text-sm md:table">
-        <caption className="sr-only">Game releases this month with platforms and PC install size</caption>
+        <caption className="sr-only">Upcoming and recent game releases with platforms and install size</caption>
         <thead className="bg-secondary text-muted-foreground">
           <tr>
             <th scope="col" className="px-4 py-2.5 font-medium">Date</th>
             <th scope="col" className="px-4 py-2.5 font-medium">Game</th>
             <th scope="col" className="px-4 py-2.5 font-medium">Platforms</th>
-            <th scope="col" className="px-4 py-2.5 font-medium">PC install size</th>
+            <th scope="col" className="px-4 py-2.5 font-medium">Install size</th>
             <th scope="col" className="px-4 py-2.5 font-medium">Status</th>
           </tr>
         </thead>
@@ -129,13 +129,13 @@ export default async function HomePage() {
           When games unlock, how big they are and what your PC needs
         </h1>
         <p className="mt-3 max-w-2xl text-lg text-muted-foreground">
-          This month&apos;s releases at a glance. Select a game for its release time, install size and PC requirements.
+          Upcoming and recent releases at a glance. Select a game for its release time, install size and requirements.
         </p>
         <div className="mt-6">
           <ReleaseBoard games={games} />
         </div>
         <p className="mt-2 text-xs text-muted-foreground">
-          Install sizes are the PC figures published by each game&apos;s publisher or store page.
+          Install sizes are the figures published by each game&apos;s publisher or store page, for PC where a PC version exists.
         </p>
       </section>
 

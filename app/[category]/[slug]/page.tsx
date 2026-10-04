@@ -4,6 +4,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 import {
+  getAllArticleSlugs,
   getArticleBySlug,
   getRelatedArticles,
   getMoreFromCategory,
@@ -25,6 +26,14 @@ export const revalidate = 300;
 
 type Params = { category: string; slug: string };
 
+export async function generateStaticParams(): Promise<Params[]> {
+  const [articles, categories] = await Promise.all([getAllArticleSlugs(), getCategories()]);
+  const categorySlug = new Map(categories.map((c) => [c.id, c.slug]));
+  return articles
+    .filter((a) => a.category_id && categorySlug.has(a.category_id))
+    .map((a) => ({ category: categorySlug.get(a.category_id as string) as string, slug: a.slug }));
+}
+
 export async function generateMetadata({
   params,
 }: {
@@ -40,7 +49,7 @@ export async function generateMetadata({
   const url = `${SITE_URL_RESOLVED}/${categorySlug}/${article.slug}`;
 
   return {
-    title: seoTitle,
+    title: { absolute: seoTitle },
     description: seoDesc,
     alternates: { canonical: article.canonical_url || url },
     openGraph: {
@@ -87,7 +96,7 @@ export default async function ArticlePage({ params }: { params: Params }) {
     '@type': article.category?.slug === 'updates' ? 'NewsArticle' : 'Article',
     headline: article.title,
     description: article.excerpt,
-    image: article.hero_image ? [article.hero_image] : [],
+    image: article.hero_image ? [new URL(article.hero_image, SITE_URL_RESOLVED).toString()] : [],
     datePublished: article.publish_date,
     dateModified: article.updated_date || article.publish_date,
     author: article.author
