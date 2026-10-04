@@ -1,3 +1,4 @@
+import { DiscoveryPaths } from '@/components/editorial/DiscoveryPaths';
 import Link from 'next/link';
 import Image from 'next/image';
 import { getGames, getLatestArticles, getCategories } from '@/lib/queries';
@@ -13,8 +14,23 @@ function ReleaseBoard({ games }: { games: Game[] }) {
   const today = new Date().toISOString().slice(0, 10);
 
   return (
-    <div className="release-board overflow-x-auto rounded border border-border">
-      <table className="w-full min-w-[640px] text-left text-sm">
+    <div className="release-board rounded border border-border">
+      <ul className="divide-y divide-border md:hidden">
+        {games.map((game) => (
+          <li key={game.slug} className="bg-card p-4">
+            <p className="flex justify-between gap-3 text-sm text-muted-foreground">
+              <time dateTime={game.release_date}>{boardDate(game.release_date)}</time>
+              <span>{game.release_date <= today ? 'Out now' : 'Upcoming'}</span>
+            </p>
+            <h2 className="mt-2 text-lg font-semibold">
+              {game.article_path ? <Link href={game.article_path} className="text-primary hover:underline">{game.name}</Link> : game.name}
+            </h2>
+            <p className="mt-2 text-sm text-muted-foreground">{game.platforms.join(', ')}</p>
+            <p className="mt-1 text-sm">PC install: {game.install_size || 'Not announced'}</p>
+          </li>
+        ))}
+      </ul>
+      <table className="hidden w-full text-left text-sm md:table">
         <caption className="sr-only">Game releases this month with platforms and PC install size</caption>
         <thead className="bg-secondary text-muted-foreground">
           <tr>
@@ -123,6 +139,7 @@ export default async function HomePage() {
         </p>
       </section>
 
+      <DiscoveryPaths />
       <section className="mx-auto mt-12 grid max-w-6xl gap-12 px-4 sm:px-6 lg:grid-cols-[1.7fr_1fr]">
         <div>
           <h2 className="border-b-2 border-foreground pb-2 text-xl font-semibold">Latest coverage</h2>

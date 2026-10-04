@@ -1586,6 +1586,235 @@
       "social_image": "/images/games/modern-warfare-4.jpg",
       "reading_time": 3,
       "created_at": "2026-10-04T09:30:00Z"
+    },
+    {
+      "id": "55273d29-63e0-49ec-ac75-29597033cf1e",
+      "title": "How Long Will a Game Download Take? Mbps, GB and Install Time Explained",
+      "slug": "game-download-time-explained",
+      "excerpt": "Estimate the transfer time from your actual download speed, then allow separately for unpacking, verification and updates.",
+      "hero_image": "/images/editorial/hades.jpg",
+      "hero_image_alt": "How Long Will a Game Download Take? Mbps, GB and Install Time Explained — official Supergiant Games / Steam artwork",
+      "hero_image_caption": "Image: Supergiant Games / Steam",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "A 100 GB game and a 100 Mbps connection sound like matching numbers. They are different units: file sizes are usually shown in bytes, while connection speeds are usually shown in bits. Eight bits make one byte. A simple transfer estimate is size in decimal GB multiplied by 8,000, divided by speed in Mbps."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Use the speed you can actually sustain",
+          "id": "use-the-speed-you-can-actually-sustain"
+        },
+        {
+          "type": "paragraph",
+          "text": "Read the launcher’s download graph during a steady transfer. If it reports MB/s, multiply by eight to compare it with Mbps. Do not use a brief peak. A connection shared with streaming, a busy game server or weak Wi-Fi can all produce a lower sustained rate than the broadband package suggests."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Example: 100 GB download",
+            "Ideal transfer time"
+          ],
+          "rows": [
+            [
+              "50 Mbps",
+              "4 hours 27 minutes"
+            ],
+            [
+              "100 Mbps",
+              "2 hours 13 minutes"
+            ],
+            [
+              "250 Mbps",
+              "53 minutes"
+            ],
+            [
+              "500 Mbps",
+              "27 minutes"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "These rounded examples assume a constant rate, decimal GB and no additional overhead. They are planning estimates, not promised completion times. Some launchers use binary units or show a compressed download that differs from the space needed after installation."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Download, install and unlock are separate steps",
+          "id": "download-install-and-unlock-are-separate-steps"
+        },
+        {
+          "type": "paragraph",
+          "text": "A finished transfer may still need to be written, unpacked or verified. A preload can also remain locked until the publisher’s release time. When the launcher reports little network activity but ongoing disk activity, another download speed test will not explain the delay."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Plan a launch-day buffer",
+          "id": "plan-a-launch-day-buffer"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Check free space on the installation drive before starting.",
+            "Start the download early enough to allow for a patch and verification.",
+            "Keep the device powered and avoid a scheduled sleep during the transfer.",
+            "Look for the launcher’s ready-to-play state rather than relying on the transfer percentage."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "For a group session, tell friends when installation is complete rather than quoting the original estimate. If a transfer is unexpectedly slow, compare the launcher’s network and disk graphs first. You can then decide whether to investigate the connection or the installation drive."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Source and related reading",
+          "id": "source-and-related-reading"
+        },
+        {
+          "type": "link",
+          "text": "Steam Support: slow downloads and content servers",
+          "url": "https://help.steampowered.com/en/faqs/view/5AC5-8056-E88F-F3FF"
+        },
+        {
+          "type": "link",
+          "text": "Understand how preloading works",
+          "url": "/install/how-game-preloading-works"
+        }
+      ],
+      "author_id": "3fbf5385-21c8-5d51-96b5-e6c1c8bc0330",
+      "category_id": "905f518f-ce0e-5f7b-9713-8989a772219f",
+      "tags": [
+        "steam",
+        "storage",
+        "windows"
+      ],
+      "publish_date": "2026-10-04T00:00:00Z",
+      "updated_date": "2026-10-04T00:00:00Z",
+      "featured": false,
+      "trending": false,
+      "editor_choice": false,
+      "review_score": null,
+      "review_product": null,
+      "seo_title": "How Long Will a Game Download Take? Mbps, GB and Install Time Explained",
+      "seo_description": "Estimate the transfer time from your actual download speed, then allow separately for unpacking, verification and updates.",
+      "canonical_url": null,
+      "social_image": "/images/editorial/hades.jpg",
+      "reading_time": 2,
+      "created_at": "2026-10-04T14:00:00Z",
+      "takeaways": [
+        "Use your measured download speed rather than the maximum speed on your broadband plan.",
+        "A download estimate covers data transfer, not unpacking or installation.",
+        "Keep the PC connected and check the launcher before assuming the game is ready."
+      ]
+    },
+    {
+      "id": "b6afc92a-58b8-4bff-8983-2c7bb8a883c4",
+      "title": "Game Broken After an Update? Verify Steam Files Before Reinstalling",
+      "slug": "verify-steam-game-files-after-update",
+      "excerpt": "A practical order for checking a failed update: finish the download, protect saves, verify installed files, then test a clean launch.",
+      "hero_image": "/images/editorial/eldenring.jpg",
+      "hero_image_alt": "Game Broken After an Update? Verify Steam Files Before Reinstalling — official FromSoftware, Inc., Bandai Namco Entertainment / Steam artwork",
+      "hero_image_caption": "Image: FromSoftware, Inc., Bandai Namco Entertainment / Steam",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "A failed launch after a patch does not automatically mean that the whole installation needs to be replaced. Missing or damaged game files are one possible cause. Steam has a built-in verification tool that compares the installed files with the game’s expected installation and can download replacements."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "First confirm the update finished",
+          "id": "first-confirm-the-update-finished"
+        },
+        {
+          "type": "paragraph",
+          "text": "Open Downloads and look for a queued transfer, a paused update or an ongoing installation step. Restarting the game while the launcher is still processing the patch can confuse troubleshooting. Note the error message and whether the game fails before the menu, while loading a save or only in a particular mode."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Protect what verification does not protect",
+          "id": "protect-what-verification-does-not-protect"
+        },
+        {
+          "type": "paragraph",
+          "text": "Check the game’s own support page for its save location and mod instructions. Keep a separate copy of important local saves where the developer permits it. Verification is a tool for installation files; do not treat it as a way to recover progress or resolve a cloud-save conflict."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Run the installed-files check",
+          "id": "run-the-installed-files-check"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Close the game.",
+            "In Steam Library, right-click its entry and open Properties.",
+            "Choose Installed Files, then Verify integrity of game files.",
+            "Allow verification and any replacement download to finish before testing."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Make the next test useful",
+          "id": "make-the-next-test-useful"
+        },
+        {
+          "type": "paragraph",
+          "text": "Launch the game once with the normal supported configuration. If you use mods, follow the mod author’s removal procedure rather than deleting random folders. A patch can change what a mod expects even when Steam’s official files are intact. Record whether the same error occurs at the same point."
+        },
+        {
+          "type": "paragraph",
+          "text": "If verification passes and the failure remains, use the publisher’s known-issues page and support process. Share the exact message, game version and a short description of the test. Reinstalling is a later option, particularly for a large download, because it will not necessarily fix an account issue, incompatible mod or broken save."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Official instructions",
+          "id": "official-instructions"
+        },
+        {
+          "type": "link",
+          "text": "Steam Support: verify integrity of game files",
+          "url": "https://help.steampowered.com/en/faqs/view/0C48-FCBD-DA71-93EB"
+        },
+        {
+          "type": "link",
+          "text": "Steam Support: update and installation issues",
+          "url": "https://help.steampowered.com/en/faqs/view/21F5-8D5D-0141-7A5E"
+        }
+      ],
+      "author_id": "3fbf5385-21c8-5d51-96b5-e6c1c8bc0330",
+      "category_id": "483e29a1-c3a9-5be4-8a39-7c5fbd0d13ed",
+      "tags": [
+        "steam",
+        "windows",
+        "storage"
+      ],
+      "publish_date": "2026-10-04T00:00:00Z",
+      "updated_date": "2026-10-04T00:00:00Z",
+      "featured": false,
+      "trending": false,
+      "editor_choice": false,
+      "review_score": null,
+      "review_product": null,
+      "seo_title": "Game Broken After an Update? Verify Steam Files Before Reinstalling",
+      "seo_description": "A practical order for checking a failed update: finish the download, protect saves, verify installed files, then test a clean launch.",
+      "canonical_url": null,
+      "social_image": "/images/editorial/eldenring.jpg",
+      "reading_time": 2,
+      "created_at": "2026-10-04T14:00:00Z",
+      "takeaways": [
+        "Verification checks installed game files; it is not a save-backup system.",
+        "Finish pending downloads and close the game before running verification.",
+        "Test once without unsupported mods before downloading the entire game again."
+      ]
     }
   ],
   "deals": [],

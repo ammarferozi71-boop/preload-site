@@ -146,3 +146,14 @@
   thead { background-color: hsl(var(--secondary)); }
   ::selection { background-color: hsl(var(--primary)); color: hsl(var(--primary-foreground)); }
 }
+
+@layer components {
+  .discovery-card { box-shadow: 0 2px 8px hsl(var(--foreground) / 0.035); }
+  .discovery-section { scroll-margin-top: 5rem; }
+  .article-content { overflow-wrap: anywhere; }
+  .article-content a { text-decoration-thickness: 1px; }
+  .article-content table { line-height: 1.6; }
+  .article-content tbody tr:nth-child(even) { background-color: hsl(var(--card)); }
+  .article-content tbody tr:hover { background-color: hsl(var(--secondary)); }
+  .reading-brief { border-left: 3px solid hsl(var(--primary)); }
+}

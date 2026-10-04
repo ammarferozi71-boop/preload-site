@@ -1,3 +1,4 @@
+import { ReadingBrief } from '@/components/editorial/ReadingBrief';
 import { notFound, redirect } from 'next/navigation';
 import type { Metadata } from 'next';
 import Link from 'next/link';
@@ -208,6 +209,7 @@ export default async function ArticlePage({ params }: { params: Params }) {
               )}
             </div>
 
+            <ReadingBrief points={article.takeaways} />
             <ArticleBody body={article.body as BodyBlock[]} />
 
             {/* Tags */}

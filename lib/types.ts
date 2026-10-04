@@ -51,6 +51,7 @@ export type BodyBlock =
   | { type: 'table'; headers: string[]; rows: string[][] };
 
 export interface Article {
+  takeaways?: string[];
   id: string;
   title: string;
   slug: string;
