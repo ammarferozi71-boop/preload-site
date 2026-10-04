@@ -1,0 +1,148 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: light;
+    /* Preload palette: ink navy, mist grey, download blue, released green. */
+    --background: 0 0% 100%;
+    --foreground: 213 57% 15%;
+    --card: 207 36% 95%;
+    --card-foreground: 213 57% 15%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 213 57% 15%;
+    --primary: 218 82% 43%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 207 36% 95%;
+    --secondary-foreground: 213 57% 15%;
+    --muted: 207 36% 95%;
+    --muted-foreground: 215 20% 38%;
+    --accent: 146 61% 28%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 4 76% 40%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 212 29% 87%;
+    --input: 215 16% 47%;
+    --ring: 218 82% 43%;
+    --radius: 0.25rem;
+    --image-caption: 0 0% 100%;
+    --image-caption-opacity: 0.97;
+    --scrim-opacity: 0.35;
+    --chart-1: 218 82% 43%;
+    --chart-2: 146 61% 28%;
+    --chart-3: 35 100% 30%;
+    --chart-4: 266 33% 48%;
+    --chart-5: 213 57% 15%;
+  }
+}
+
+@layer base {
+  * {
+    border-color: hsl(var(--border));
+  }
+  body {
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+  }
+  :focus-visible {
+    outline: 2px solid hsl(var(--ring));
+    outline-offset: 3px;
+  }
+}
+
+@layer components {
+  .font-heading {
+    font-family: var(--font-plex), ui-sans-serif, system-ui, sans-serif;
+    letter-spacing: -0.015em;
+  }
+  .font-sans {
+    font-family: var(--font-plex), ui-sans-serif, system-ui, sans-serif;
+  }
+  .article-content p {
+    margin-bottom: 1.25rem;
+    line-height: 1.7;
+    font-size: 1.0625rem;
+    max-width: 70ch;
+  }
+  .article-content table,
+  .release-board {
+    font-variant-numeric: tabular-nums;
+  }
+  .article-content h2 {
+    font-family: var(--font-plex), ui-sans-serif, system-ui, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    line-height: 1.3;
+  }
+  .article-content h3 {
+    font-family: var(--font-plex), ui-sans-serif, system-ui, sans-serif;
+    font-size: 1.1875rem;
+    font-weight: 600;
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+  }
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Compatibility for existing dark-theme color utilities: colors only, no geometry. */
+@layer utilities {
+  .text-white { color: hsl(var(--foreground)); }
+  .text-gray-200, .text-gray-300,
+  .text-muted\/30, .text-muted\/50,
+  .text-muted-foreground\/50, .text-foreground\/70 {
+    color: hsl(var(--muted-foreground));
+  }
+  .group:hover .group-hover\:text-primary\/40 {
+    color: hsl(var(--primary));
+  }
+  .bg-card\/30 { background-color: hsl(var(--card)); }
+  .border-border\/60, .border-white\/30 { border-color: hsl(var(--border)); }
+  .bg-black\/30, .bg-black\/80 {
+    background-color: hsl(var(--image-caption) / var(--image-caption-opacity));
+  }
+  .fixed.bg-black\/80, .bg-black\/60, .bg-black\/70 {
+    background-color: hsl(var(--foreground) / var(--scrim-opacity));
+  }
+  /* Keep image card captions in place, with a light backing independent of photo colors. */
+  .group:has(> div > [class*="from-black"]) > .absolute:not(.inset-0) {
+    background-color: hsl(var(--image-caption) / var(--image-caption-opacity));
+  }
+  [class*="from-black"] {
+    --tw-gradient-from: hsl(var(--image-caption));
+    --tw-gradient-to: hsl(var(--image-caption) / 0);
+    --tw-gradient-stops: hsl(var(--image-caption) / var(--image-caption-opacity)) 0%, hsl(var(--image-caption) / var(--image-caption-opacity)) 70%, var(--tw-gradient-to) 100%;
+  }
+}
+
+@layer base {
+  input, textarea, select {
+    color: hsl(var(--foreground));
+    background-color: hsl(var(--background));
+  }
+  input::placeholder, textarea::placeholder {
+    color: hsl(var(--muted-foreground));
+    opacity: 1;
+  }
+  input:not([type="checkbox"]):not([type="radio"]), textarea, select {
+    border-color: hsl(var(--input));
+  }
+  input[type="checkbox"], input[type="radio"] { accent-color: hsl(var(--primary)); }
+  pre, code, kbd {
+    color: hsl(var(--foreground));
+    background-color: hsl(var(--secondary));
+    border-color: hsl(var(--border));
+  }
+  table { color: hsl(var(--foreground)); background-color: hsl(var(--background)); }
+  thead { background-color: hsl(var(--secondary)); }
+  ::selection { background-color: hsl(var(--primary)); color: hsl(var(--primary-foreground)); }
+}
