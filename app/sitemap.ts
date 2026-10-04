@@ -14,6 +14,10 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   ]);
 
   const catMap = new Map(categories.map((c) => [c.id, c.slug]));
+  // Listing pages change when a new article is published.
+  const newest = new Date(
+    articles.map((a) => a.updated_date || a.publish_date).sort().pop() || '2026-10-04T08:00:00Z'
+  );
 
   const articleUrls: MetadataRoute.Sitemap = articles.map((a) => {
     const catSlug = catMap.get(a.category_id || '') || 'releases';
@@ -27,30 +31,30 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   const categoryUrls: MetadataRoute.Sitemap = categories.map((c) => ({
     url: `${SITE_URL_RESOLVED}/${c.slug}`,
-    lastModified: new Date(),
+    lastModified: newest,
     changeFrequency: 'daily',
     priority: 0.7,
   }));
 
   const authorUrls: MetadataRoute.Sitemap = authors.map((a) => ({
     url: `${SITE_URL_RESOLVED}/authors/${a.slug}`,
-    lastModified: new Date(),
+    lastModified: newest,
     changeFrequency: 'weekly',
     priority: 0.6,
   }));
 
   const topicUrls: MetadataRoute.Sitemap = topics.map((t) => ({
     url: `${SITE_URL_RESOLVED}/topics/${t.slug}`,
-    lastModified: new Date(),
+    lastModified: newest,
     changeFrequency: 'daily',
     priority: 0.6,
   }));
 
   const staticUrls: MetadataRoute.Sitemap = [
     ...['about', 'editorial-standards', 'privacy', ...(CONTACT_EMAIL ? ['contact'] : [])].map(slug => ({url: SITE_URL_RESOLVED+'/'+slug, lastModified: new Date('2026-10-04T08:00:00Z')})),
-    { url: SITE_URL_RESOLVED, lastModified: new Date(), changeFrequency: 'daily', priority: 1.0 },
-    { url: `${SITE_URL_RESOLVED}/authors`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.5 },
-    { url: `${SITE_URL_RESOLVED}/topics`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.5 },
+    { url: SITE_URL_RESOLVED, lastModified: newest, changeFrequency: 'daily', priority: 1.0 },
+    { url: `${SITE_URL_RESOLVED}/authors`, lastModified: newest, changeFrequency: 'weekly', priority: 0.5 },
+    { url: `${SITE_URL_RESOLVED}/topics`, lastModified: newest, changeFrequency: 'weekly', priority: 0.5 },
   ];
 
   return [...staticUrls, ...articleUrls, ...categoryUrls, ...authorUrls, ...topicUrls];

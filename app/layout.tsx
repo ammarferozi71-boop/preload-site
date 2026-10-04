@@ -15,8 +15,7 @@ const plex = IBM_Plex_Sans({
   display: 'swap',
 });
 
-// Release statuses on the homepage depend on today's date, so pages render per request.
-export const dynamic = 'force-dynamic';
+// Pages are pre-rendered and refreshed every few minutes (see each page's revalidate value).
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL_RESOLVED),
