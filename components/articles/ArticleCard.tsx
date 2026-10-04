@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { formatRelativeTime, getArticleUrl } from '@/lib/site';
+import { formatRelativeTime, getArticleUrl, thumbFor } from '@/lib/site';
 import type { ArticleWithRelations, Category, Author } from '@/lib/types';
 
 type ArticleCardProps = {
@@ -50,7 +50,7 @@ export function ArticleCard({
         {showImage && article.hero_image && (
           <div className="relative h-16 w-24 shrink-0 overflow-hidden rounded">
             <Image
-            src={article.hero_image}
+            src={thumbFor(article.hero_image)}
               alt={article.hero_image_alt || article.title}
               fill
               sizes="96px"
@@ -81,7 +81,7 @@ export function ArticleCard({
         {showImage && article.hero_image && (
           <div className="relative aspect-video w-full shrink-0 overflow-hidden rounded-lg sm:w-64">
             <Image
-              src={article.hero_image}
+              src={thumbFor(article.hero_image)}
               alt={article.hero_image_alt || article.title}
               fill
               sizes="(max-width: 640px) 100vw, 256px"
@@ -120,7 +120,7 @@ export function ArticleCard({
       {showImage && article.hero_image && (
         <div className="relative aspect-video w-full overflow-hidden rounded-lg">
           <Image
-            src={article.hero_image}
+            src={thumbFor(article.hero_image)}
             alt={article.hero_image_alt || article.title}
             fill
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
