@@ -15,13 +15,13 @@ function ReleaseBoard({ games }: { games: Game[] }) {
   return (
     <div className="release-board overflow-x-auto rounded border border-border">
       <table className="w-full min-w-[640px] text-left text-sm">
-        <caption className="sr-only">Game releases this month with platforms and PC install size</caption>
+        <caption className="sr-only">Upcoming and recent game releases with platforms and install size</caption>
         <thead className="bg-secondary text-muted-foreground">
           <tr>
             <th scope="col" className="px-4 py-2.5 font-medium">Date</th>
             <th scope="col" className="px-4 py-2.5 font-medium">Game</th>
             <th scope="col" className="px-4 py-2.5 font-medium">Platforms</th>
-            <th scope="col" className="px-4 py-2.5 font-medium">PC install size</th>
+            <th scope="col" className="px-4 py-2.5 font-medium">Install size</th>
             <th scope="col" className="px-4 py-2.5 font-medium">Status</th>
           </tr>
         </thead>
@@ -113,13 +113,13 @@ export default async function HomePage() {
           When games unlock, how big they are and what your PC needs
         </h1>
         <p className="mt-3 max-w-2xl text-lg text-muted-foreground">
-          This month&apos;s releases at a glance. Select a game for its release time, install size and PC requirements.
+          Upcoming and recent releases at a glance. Select a game for its release time, install size and requirements.
         </p>
         <div className="mt-6">
           <ReleaseBoard games={games} />
         </div>
         <p className="mt-2 text-xs text-muted-foreground">
-          Install sizes are the PC figures published by each game&apos;s publisher or store page.
+          Install sizes are the figures published by each game&apos;s publisher or store page, for PC where a PC version exists.
         </p>
       </section>
 

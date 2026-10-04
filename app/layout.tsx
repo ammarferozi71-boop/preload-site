@@ -1,7 +1,7 @@
 import './globals.css';
 import type { Metadata } from 'next';
 import { IBM_Plex_Sans } from 'next/font/google';
-import { SITE_NAME, SITE_TAGLINE, SITE_DESCRIPTION, SITE_URL_RESOLVED } from '@/lib/site';
+import { SITE_NAME, SITE_TAGLINE, SITE_DESCRIPTION, SITE_URL_RESOLVED, GOOGLE_SITE_VERIFICATION } from '@/lib/site';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
 import { SearchProvider } from '@/components/search/SearchProvider';
@@ -33,6 +33,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
   },
+  ...(GOOGLE_SITE_VERIFICATION ? { verification: { google: GOOGLE_SITE_VERIFICATION } } : {}),
   robots: {
     index: true,
     follow: true,

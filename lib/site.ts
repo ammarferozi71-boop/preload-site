@@ -9,6 +9,8 @@ export const SITE_TAGLINE = 'Release times, install sizes and PC requirements';
 export const SITE_DESCRIPTION =
   'When games unlock, how much space they need and what your PC needs to run them. Sourced from publisher and store listings.';
 export const SITE_URL_RESOLVED = SITE_URL;
+// Google Search Console verification code (the content value of the google-site-verification tag).
+export const GOOGLE_SITE_VERIFICATION = (process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || '').trim();
 // Public contact address. Set NEXT_PUBLIC_CONTACT_EMAIL to enable the Contact page.
 export const CONTACT_EMAIL = (process.env.NEXT_PUBLIC_CONTACT_EMAIL || '').trim();
 

@@ -99,6 +99,20 @@
       "name": "Storage",
       "description": "SSD space, drives and install sizes.",
       "image_url": ""
+    },
+    {
+      "id": "7c0b2f5e-1d0a-4c1e-9a11-000000000001",
+      "slug": "gta",
+      "name": "GTA",
+      "description": "GTA 6 release, preload and install size.",
+      "image_url": ""
+    },
+    {
+      "id": "7c0b2f5e-1d0a-4c1e-9a11-000000000002",
+      "slug": "gears-of-war",
+      "name": "Gears of War",
+      "description": "Gears of War: E-Day install size, preload and requirements.",
+      "image_url": ""
     }
   ],
   "authors": [
@@ -1586,6 +1600,444 @@
       "social_image": "/images/games/modern-warfare-4.jpg",
       "reading_time": 3,
       "created_at": "2026-10-04T09:30:00Z"
+    },
+    {
+      "id": "5ae796d0-1b81-423c-9b3d-74772dd4cec7",
+      "title": "Gears of War: E-Day Install Size, Preload and PC Requirements",
+      "slug": "gears-of-war-e-day-install-size-preload",
+      "excerpt": "Gears of War: E-Day is about 120 GB on Xbox and PC, pre-install is live, and it unlocks at 3pm UTC on October 6. Full PC requirements by resolution.",
+      "hero_image": "/images/games/gears-of-war-e-day.jpg",
+      "hero_image_alt": "Gears of War: E-Day official screenshot",
+      "hero_image_caption": "Image: Xbox Game Studios / Steam",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "**Gears of War: E-Day takes about 120 GB on both Xbox Series X|S and PC.** Pre-install is already available, and the game unlocks on **October 6, 2026 at 3pm UTC**."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "At a glance",
+          "id": "at-a-glance"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "",
+            "Details"
+          ],
+          "rows": [
+            [
+              "**Release date**",
+              "October 6, 2026"
+            ],
+            [
+              "**Unlock time**",
+              "3pm UTC"
+            ],
+            [
+              "**Early access**",
+              "From October 1 with the Premium Edition or Premium Upgrade"
+            ],
+            [
+              "**Install size, Xbox Series X|S**",
+              "About 120.5 GB"
+            ],
+            [
+              "**Install size, PC**",
+              "About 120 GB"
+            ],
+            [
+              "**Pre-install**",
+              "Available now"
+            ],
+            [
+              "**PC stores**",
+              "Xbox app, Steam"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Unlock time in your region",
+          "id": "unlock-time-in-your-region"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Region",
+            "Time on October 6"
+          ],
+          "rows": [
+            [
+              "US West (PDT)",
+              "8am"
+            ],
+            [
+              "US East (EDT)",
+              "11am"
+            ],
+            [
+              "UK (BST)",
+              "4pm"
+            ],
+            [
+              "Central Europe (CEST)",
+              "5pm"
+            ],
+            [
+              "Pakistan (PKT)",
+              "8pm"
+            ],
+            [
+              "Japan (JST)",
+              "12am on October 7"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Install size",
+          "id": "install-size"
+        },
+        {
+          "type": "paragraph",
+          "text": "Pure Xbox lists the download at about 120.5 GB on Xbox Series X|S and 120 GB on PC. The official PC requirements ask for 115 GB of SSD space, so plan for a little more than that."
+        },
+        {
+          "type": "paragraph",
+          "text": "On a 512 GB Xbox Series S this one game takes roughly a quarter of the drive. If you need room, see [how to free up SSD space for large games](/guides/free-up-ssd-space-for-large-games)."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Pre-install",
+          "id": "pre-install"
+        },
+        {
+          "type": "paragraph",
+          "text": "Pre-install is live on Xbox and the Xbox app, including for Game Pass members. If you have not done this before, read [how preloading works on Steam, Xbox, PlayStation and Battle.net](/install/how-game-preloading-works)."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "PC requirements",
+          "id": "pc-requirements"
+        },
+        {
+          "type": "paragraph",
+          "text": "These are the final official requirements, as reported by KitGuru and DSOGaming. Every tier needs an SSD."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "",
+            "1080p, 60 FPS, Medium",
+            "1440p, 60 FPS, High",
+            "4K, 60 FPS, Ultra"
+          ],
+          "rows": [
+            [
+              "**GPU**",
+              "RTX 2060 / RX 6600",
+              "RTX 3060 Ti / RX 6700 XT",
+              "RTX 5070 Ti / RX 7900 XT"
+            ],
+            [
+              "**CPU**",
+              "Ryzen 5 2600X / Core i5-10400",
+              "Ryzen 5 5600 / Core i5-11600K",
+              "Ryzen 7 7800X3D / Core i7-14700K"
+            ],
+            [
+              "**Video memory**",
+              "6 GB",
+              "8 GB",
+              "12 GB"
+            ],
+            [
+              "**RAM**",
+              "12 GB",
+              "16 GB",
+              "16 GB"
+            ],
+            [
+              "**Storage**",
+              "115 GB SSD",
+              "115 GB SSD",
+              "115 GB SSD"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "The 1440p and 4K targets are with an upscaler turned on. The PC version supports DLSS 4.5, FSR 4 and XeSS, and includes a built-in benchmark."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Quick answers",
+          "id": "quick-answers"
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "How big is Gears of War: E-Day?",
+          "id": "how-big-is-gears-of-war-e-day"
+        },
+        {
+          "type": "paragraph",
+          "text": "About 120 GB on both Xbox Series X|S and PC."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Can I pre-install Gears of War: E-Day?",
+          "id": "can-i-pre-install-gears-of-war-e-day"
+        },
+        {
+          "type": "paragraph",
+          "text": "Yes. Pre-install is available now on Xbox and PC."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "What time does Gears of War: E-Day unlock?",
+          "id": "what-time-does-gears-of-war-e-day-unlock"
+        },
+        {
+          "type": "paragraph",
+          "text": "3pm UTC on October 6, 2026."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Does it need an SSD on PC?",
+          "id": "does-it-need-an-ssd-on-pc"
+        },
+        {
+          "type": "paragraph",
+          "text": "Yes. Every official tier lists an SSD."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Sources",
+          "id": "sources"
+        },
+        {
+          "type": "list",
+          "items": [
+            "[Pure Xbox, Gears of War E-Day release times, install size and early access](https://www.purexbox.com/guides/gears-of-war-e-day-release-date-release-times-and-everything-you-need-to-know-on-xbox-and-pc)",
+            "[KitGuru, Gears of War E-Day PC system requirements](https://www.kitguru.net/gaming/matthew-wilson/gears-of-war-e-day-pc-system-requirements-announced-2/)",
+            "[DSOGaming, final PC requirements for Gears of War E-Day](https://www.dsogaming.com/news/here-are-the-final-pc-requirements-for-gears-of-war-e-day/)"
+          ]
+        }
+      ],
+      "author_id": "3fbf5385-21c8-5d51-96b5-e6c1c8bc0330",
+      "category_id": "2dd8dd53-41b4-51ef-8b08-68844f0d6d3d",
+      "tags": [
+        "gears-of-war",
+        "xbox",
+        "steam",
+        "storage"
+      ],
+      "publish_date": "2026-10-04T11:00:00Z",
+      "updated_date": null,
+      "featured": false,
+      "trending": true,
+      "editor_choice": false,
+      "review_score": null,
+      "review_product": null,
+      "seo_title": "Gears of War: E-Day Install Size, Preload & PC Requirements",
+      "seo_description": "Gears of War: E-Day is about 120 GB on Xbox and PC, pre-install is live, and it unlocks at 3pm UTC on October 6. Full PC requirements by resolution.",
+      "canonical_url": null,
+      "social_image": "/images/games/gears-of-war-e-day.jpg",
+      "reading_time": 2,
+      "created_at": "2026-10-04T11:00:00Z"
+    },
+    {
+      "id": "76352802-904b-4713-a89e-4f4174605798",
+      "title": "GTA 6 Install Size and Preload: What Is Confirmed and What Is Not",
+      "slug": "gta-6-install-size-preload",
+      "excerpt": "GTA 6 preloading starts November 12, 2026 for digital pre-orders. Rockstar has not announced the install size. Here is how much space to plan for and how to prepare.",
+      "hero_image": "/images/guides/gta-6-install-preload.webp",
+      "hero_image_alt": "GTA 6 status: release November 19, preload November 12, install size and unlock time not announced",
+      "hero_image_caption": "",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "**GTA 6 preloading starts on November 12, 2026, one week before the November 19 launch.** Rockstar has **not announced the install size**, so every number you see quoted today is an estimate."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "What is confirmed",
+          "id": "what-is-confirmed"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "",
+            "Status"
+          ],
+          "rows": [
+            [
+              "**Release date**",
+              "November 19, 2026"
+            ],
+            [
+              "**Preload opens**",
+              "November 12, 2026, for digital pre-orders"
+            ],
+            [
+              "**Platforms**",
+              "PS5, Xbox Series X|S"
+            ],
+            [
+              "**Install size**",
+              "Not announced"
+            ],
+            [
+              "**Exact unlock time**",
+              "Not announced"
+            ],
+            [
+              "**PC version**",
+              "Not announced"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "How big will GTA 6 be?",
+          "id": "how-big-will-gta-6-be"
+        },
+        {
+          "type": "paragraph",
+          "text": "Nobody outside Rockstar knows yet. SVG's launch guide notes that estimates range from 150 GB to far higher, and treats 200 to 300 GB as the top of reasonable speculation."
+        },
+        {
+          "type": "paragraph",
+          "text": "For comparison, other big games this season list between 115 GB and 125 GB. A larger install for GTA 6 would not be surprising, but treat any exact figure as a guess until the PlayStation Store or Xbox Store shows one. That usually happens when preloading opens."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "How to prepare your console now",
+          "id": "how-to-prepare-your-console-now"
+        },
+        {
+          "type": "paragraph",
+          "text": "You do not need the exact number to get ready."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Check your free space today.** On PS5, open Settings and then Storage. On Xbox, open My games and apps and then Manage.",
+            "**Aim to have at least 200 GB free** before November 12. If the game turns out smaller, you have lost nothing.",
+            "**Move or delete games you have finished.** See [how to free up SSD space for large games](/guides/free-up-ssd-space-for-large-games) for what PS5 and Xbox allow on external drives.",
+            "**On Xbox Series S, plan carefully.** A 512 GB console may need most of its drive cleared, or a Storage Expansion Card."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "How the preload will work",
+          "id": "how-the-preload-will-work"
+        },
+        {
+          "type": "paragraph",
+          "text": "Preloading applies to digital pre-orders. Once it opens, the download starts from the store page or your library, and on PS5 it can begin automatically if automatic downloads are switched on."
+        },
+        {
+          "type": "paragraph",
+          "text": "The game will still be locked until the launch time. For how this works on each console, read [how preloading works on Steam, Xbox, PlayStation and Battle.net](/install/how-game-preloading-works)."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "We will update this page",
+          "id": "we-will-update-this-page"
+        },
+        {
+          "type": "paragraph",
+          "text": "When Rockstar or the console stores publish the install size and unlock time, both will be added here."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Quick answers",
+          "id": "quick-answers"
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "How big is GTA 6?",
+          "id": "how-big-is-gta-6"
+        },
+        {
+          "type": "paragraph",
+          "text": "Not announced. Published figures are estimates."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "When can I preload GTA 6?",
+          "id": "when-can-i-preload-gta-6"
+        },
+        {
+          "type": "paragraph",
+          "text": "From November 12, 2026 with a digital pre-order."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Is GTA 6 on PC?",
+          "id": "is-gta-6-on-pc"
+        },
+        {
+          "type": "paragraph",
+          "text": "No PC version has been announced. It launches on PS5 and Xbox Series X|S."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Sources",
+          "id": "sources"
+        },
+        {
+          "type": "list",
+          "items": [
+            "[IBTimes UK, GTA 6 release date, preload time, price, editions and platforms](https://www.ibtimes.co.uk/gta-6-release-date-pre-load-time-price-editions-platforms-confirmed-rockstar-1819557)",
+            "[SVG, GTA 6 launch guide](https://www.svg.com/2254292/gta-6-launch-guide-release-date-preload-time-price-editions-platforms/)"
+          ]
+        }
+      ],
+      "author_id": "3fbf5385-21c8-5d51-96b5-e6c1c8bc0330",
+      "category_id": "2dd8dd53-41b4-51ef-8b08-68844f0d6d3d",
+      "tags": [
+        "gta",
+        "playstation",
+        "xbox",
+        "storage"
+      ],
+      "publish_date": "2026-10-04T11:40:00Z",
+      "updated_date": null,
+      "featured": true,
+      "trending": true,
+      "editor_choice": false,
+      "review_score": null,
+      "review_product": null,
+      "seo_title": "GTA 6 Install Size & Preload Date: What's Confirmed So Far",
+      "seo_description": "GTA 6 preloading starts November 12, 2026 for digital pre-orders. Rockstar has not announced the install size. Here is how much space to plan for and how to prepare.",
+      "canonical_url": null,
+      "social_image": "/images/guides/gta-6-install-preload.webp",
+      "reading_time": 2,
+      "created_at": "2026-10-04T11:40:00Z"
     }
   ],
   "deals": [],
@@ -1612,7 +2064,7 @@
         "Xbox Series X|S"
       ],
       "install_size": "About 120 GB",
-      "article_path": null
+      "article_path": "/install/gears-of-war-e-day-install-size-preload"
     },
     {
       "slug": "star-wars-galactic-racer",
@@ -1673,6 +2125,17 @@
       ],
       "install_size": null,
       "article_path": null
+    },
+    {
+      "slug": "gta-6",
+      "name": "Grand Theft Auto VI",
+      "release_date": "2026-11-19",
+      "platforms": [
+        "PS5",
+        "Xbox Series X|S"
+      ],
+      "install_size": null,
+      "article_path": "/install/gta-6-install-size-preload"
     }
   ]
 }
