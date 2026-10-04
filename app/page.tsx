@@ -1,6 +1,7 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { getGames, getLatestArticles, getCategories } from '@/lib/queries';
-import { formatDate, getArticleUrl, SITE_URL_RESOLVED, SITE_NAME } from '@/lib/site';
+import { formatDate, getArticleUrl, thumbFor, SITE_URL_RESOLVED, SITE_NAME } from '@/lib/site';
 import type { ArticleWithRelations, Game } from '@/lib/types';
 
 export const revalidate = 300;
@@ -62,14 +63,25 @@ function ReleaseBoard({ games }: { games: Game[] }) {
 function ArticleRow({ article }: { article: ArticleWithRelations }) {
   return (
     <li className="border-t border-border py-4 first:border-t-0 first:pt-0">
-      <Link href={getArticleUrl(article)} className="group block">
-        <h3 className="text-lg font-semibold leading-snug group-hover:text-primary group-hover:underline group-hover:underline-offset-4">
-          {article.title}
-        </h3>
-        <p className="mt-1 text-sm leading-relaxed text-muted-foreground">{article.excerpt}</p>
-        <p className="mt-1.5 text-xs text-muted-foreground">
-          {article.category?.name}, {formatDate(article.publish_date)}
-        </p>
+      <Link href={getArticleUrl(article)} className="group flex gap-4">
+        {article.hero_image && (
+          <Image
+            src={thumbFor(article.hero_image)}
+            alt=""
+            width={600}
+            height={338}
+            className="h-auto w-28 shrink-0 self-start rounded border border-border sm:w-40"
+          />
+        )}
+        <div className="min-w-0">
+          <h3 className="text-lg font-semibold leading-snug group-hover:text-primary group-hover:underline group-hover:underline-offset-4">
+            {article.title}
+          </h3>
+          <p className="mt-1 text-sm leading-relaxed text-muted-foreground">{article.excerpt}</p>
+          <p className="mt-1.5 text-xs text-muted-foreground">
+            {article.category?.name}, {formatDate(article.publish_date)}
+          </p>
+        </div>
       </Link>
     </li>
   );

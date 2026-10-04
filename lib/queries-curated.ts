@@ -1,10 +1,16 @@
 import data from '@/content/launch.json';
+import manifest from '@/content/image-manifest.json';
 import type { Article, ArticleWithRelations, Author, Category, Topic, Deal, Game } from './types';
 const categories = data.categories as Category[];
 const topics = data.topics as Topic[];
 const authors = data.authors as Author[];
+// Store artwork is downloaded at build time; only use a game image that was actually saved.
+const savedImages = manifest.files as string[];
+const usable = (src: string) => (src.startsWith('/images/games/') && !savedImages.includes(src) ? '' : src);
 const articles = (data.articles as unknown as Article[]).map((article): ArticleWithRelations => ({
   ...article,
+  hero_image: usable(article.hero_image),
+  social_image: article.social_image ? usable(article.social_image) || null : null,
   author: authors.find(a => a.id === article.author_id) || null,
   category: categories.find(c => c.id === article.category_id) || null,
   topics: topics.filter(t => article.tags.includes(t.slug)),

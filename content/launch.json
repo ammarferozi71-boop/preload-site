@@ -118,8 +118,8 @@
       "title": "How to Free Up SSD Space for 100 GB Games",
       "slug": "free-up-ssd-space-for-large-games",
       "excerpt": "New games regularly need 100 GB or more on an SSD. How to see what is using your space, move games between drives without re-downloading, and what consoles allow.",
-      "hero_image": "",
-      "hero_image_alt": "How to Free Up SSD Space for 100 GB Games",
+      "hero_image": "/images/guides/ssd-space.webp",
+      "hero_image_alt": "Storage bar showing a 115 GB game needing free space on an SSD",
       "hero_image_caption": "",
       "body": [
         {
@@ -286,7 +286,7 @@
       "seo_title": "How to Free Up SSD Space for 100 GB+ Games (PC, PS5, Xbox)",
       "seo_description": "New games regularly need 100 GB or more on an SSD. How to see what is using your space, move games between drives without re-downloading, and what consoles allow.",
       "canonical_url": null,
-      "social_image": null,
+      "social_image": "/images/guides/ssd-space.webp",
       "reading_time": 2,
       "created_at": "2026-10-03T09:00:00Z"
     },
@@ -295,8 +295,8 @@
       "title": "How Game Preloading Works on Steam, Xbox, PlayStation and Battle.net",
       "slug": "how-game-preloading-works",
       "excerpt": "Preloading lets you download a game before release so it is ready at unlock. How it works on each platform, and why a preloaded game still needs time on launch day.",
-      "hero_image": "",
-      "hero_image_alt": "How Game Preloading Works on Steam, Xbox, PlayStation and Battle.net",
+      "hero_image": "/images/guides/preloading.webp",
+      "hero_image_alt": "Diagram of a game download finishing before release day and unlocking at launch",
       "hero_image_caption": "",
       "body": [
         {
@@ -449,7 +449,7 @@
       "seo_title": "How Game Preloading Works: Steam, Xbox, PlayStation, Battle.net",
       "seo_description": "Preloading lets you download a game before release so it is ready at unlock. How it works on each platform, and why a preloaded game still needs time on launch day.",
       "canonical_url": null,
-      "social_image": null,
+      "social_image": "/images/guides/preloading.webp",
       "reading_time": 2,
       "created_at": "2026-10-03T11:00:00Z"
     },
@@ -458,9 +458,9 @@
       "title": "Enshrouded 1.0 Release Date and Platforms: PC and PS5 First, Xbox Later",
       "slug": "enshrouded-1-0-release-date-platforms",
       "excerpt": "Enshrouded leaves early access on October 15, 2026 on PC and PS5. The Xbox version follows in spring 2027. What changed during early access.",
-      "hero_image": "",
-      "hero_image_alt": "Enshrouded 1.0 Release Date and Platforms: PC and PS5 First, Xbox Later",
-      "hero_image_caption": "",
+      "hero_image": "/images/games/enshrouded.jpg",
+      "hero_image_alt": "Enshrouded official screenshot",
+      "hero_image_caption": "Image: Keen Games / Steam",
       "body": [
         {
           "type": "paragraph",
@@ -631,7 +631,7 @@
       "seo_title": "Enshrouded 1.0 Release Date & Platforms (PC, PS5, Xbox)",
       "seo_description": "Enshrouded leaves early access on October 15, 2026 on PC and PS5. The Xbox version follows in spring 2027. What changed during early access.",
       "canonical_url": null,
-      "social_image": null,
+      "social_image": "/images/games/enshrouded.jpg",
       "reading_time": 1,
       "created_at": "2026-10-03T14:00:00Z"
     },
@@ -640,9 +640,9 @@
       "title": "Ace Combat 8: Wings of Theve Install Size and PC Requirements",
       "slug": "ace-combat-8-install-size-pc-requirements",
       "excerpt": "Ace Combat 8: Wings of Theve needs 125 GB on an SSD and Windows 11 on PC. Minimum and recommended specs, what the targets mean, and Denuvo status.",
-      "hero_image": "",
-      "hero_image_alt": "Ace Combat 8: Wings of Theve Install Size and PC Requirements",
-      "hero_image_caption": "",
+      "hero_image": "/images/games/ace-combat-8.jpg",
+      "hero_image_alt": "Ace Combat 8: Wings of Theve official screenshot",
+      "hero_image_caption": "Image: Bandai Namco Entertainment / Steam",
       "body": [
         {
           "type": "paragraph",
@@ -862,7 +862,7 @@
       "seo_title": "Ace Combat 8 Install Size & PC Requirements (125 GB, Windows 11)",
       "seo_description": "Ace Combat 8: Wings of Theve needs 125 GB on an SSD and Windows 11 on PC. Minimum and recommended specs, what the targets mean, and Denuvo status.",
       "canonical_url": null,
-      "social_image": null,
+      "social_image": "/images/games/ace-combat-8.jpg",
       "reading_time": 2,
       "created_at": "2026-10-03T16:00:00Z"
     },
@@ -871,8 +871,8 @@
       "title": "How to Check TPM 2.0 and Secure Boot on Windows Before a Game Launch",
       "slug": "check-tpm-secure-boot-windows",
       "excerpt": "Some PC games now require TPM 2.0 and Secure Boot. Check both in two minutes with built-in Windows tools, and what to do if either one is off.",
-      "hero_image": "",
-      "hero_image_alt": "How to Check TPM 2.0 and Secure Boot on Windows Before a Game Launch",
+      "hero_image": "/images/guides/tpm-secure-boot.webp",
+      "hero_image_alt": "Checklist showing TPM 2.0, UEFI mode and Secure Boot as the three things to check",
       "hero_image_caption": "",
       "body": [
         {
@@ -1062,7 +1062,7 @@
       "seo_title": "How to Check TPM 2.0 and Secure Boot on Windows (2 Minutes)",
       "seo_description": "Some PC games now require TPM 2.0 and Secure Boot. Check both in two minutes with built-in Windows tools, and what to do if either one is off.",
       "canonical_url": null,
-      "social_image": null,
+      "social_image": "/images/guides/tpm-secure-boot.webp",
       "reading_time": 2,
       "created_at": "2026-10-04T07:00:00Z"
     },
@@ -1071,9 +1071,9 @@
       "title": "Star Wars: Galactic Racer Release Date, Editions and PC Requirements",
       "slug": "star-wars-galactic-racer-release-date-editions",
       "excerpt": "Star Wars: Galactic Racer launches October 6, 2026. Standard is $59.99, Deluxe is $79.99, and the PC version needs 50 GB on an SSD. Full details here.",
-      "hero_image": "",
-      "hero_image_alt": "Star Wars: Galactic Racer Release Date, Editions and PC Requirements",
-      "hero_image_caption": "",
+      "hero_image": "/images/games/star-wars-galactic-racer.jpg",
+      "hero_image_alt": "Star Wars: Galactic Racer official screenshot",
+      "hero_image_caption": "Image: Fuse Games, Secret Mode / Steam",
       "body": [
         {
           "type": "paragraph",
@@ -1321,7 +1321,7 @@
       "seo_title": "Star Wars: Galactic Racer Release Date, Editions & PC Specs",
       "seo_description": "Star Wars: Galactic Racer launches October 6, 2026. Standard is $59.99, Deluxe is $79.99, and the PC version needs 50 GB on an SSD. Full details here.",
       "canonical_url": null,
-      "social_image": null,
+      "social_image": "/images/games/star-wars-galactic-racer.jpg",
       "reading_time": 2,
       "created_at": "2026-10-04T08:30:00Z"
     },
@@ -1330,9 +1330,9 @@
       "title": "Modern Warfare 4 PC Requirements, Preload Time and Install Size",
       "slug": "modern-warfare-4-pc-requirements-preload",
       "excerpt": "Modern Warfare 4 needs 115 GB of SSD space, TPM 2.0 and Secure Boot on PC. PC preload starts October 15 and the game launches October 23, 2026.",
-      "hero_image": "",
-      "hero_image_alt": "Modern Warfare 4 PC Requirements, Preload Time and Install Size",
-      "hero_image_caption": "",
+      "hero_image": "/images/games/modern-warfare-4.jpg",
+      "hero_image_alt": "Call of Duty: Modern Warfare 4 official screenshot",
+      "hero_image_caption": "Image: Activision / Steam",
       "body": [
         {
           "type": "paragraph",
@@ -1583,7 +1583,7 @@
       "seo_title": "Modern Warfare 4 PC Requirements, Preload Time & Install Size",
       "seo_description": "Modern Warfare 4 needs 115 GB of SSD space, TPM 2.0 and Secure Boot on PC. PC preload starts October 15 and the game launches October 23, 2026.",
       "canonical_url": null,
-      "social_image": null,
+      "social_image": "/images/games/modern-warfare-4.jpg",
       "reading_time": 3,
       "created_at": "2026-10-04T09:30:00Z"
     }

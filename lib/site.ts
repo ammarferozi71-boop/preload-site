@@ -93,3 +93,8 @@ export function getInitials(name: string): string {
     .join('')
     .toUpperCase();
 }
+
+// Card-sized version of an article image (saved next to the full image as "-thumb").
+export function thumbFor(src: string): string {
+  return src.replace(/^(\/images\/(?:games|guides)\/.+)\.(jpg|webp)$/, '$1-thumb.$2');
+}
