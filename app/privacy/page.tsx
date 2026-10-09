@@ -16,7 +16,7 @@ export default function PrivacyPage() {
     <article className="mx-auto max-w-3xl px-4 py-12 sm:px-6">
       <Link href="/" className="text-sm text-primary">Home</Link>
       <h1 className="mt-5 font-heading text-4xl font-semibold">Privacy Policy</h1>
-      <p className="mt-4 text-lg text-muted-foreground">Last updated: October 2, 2026</p>
+      <p className="mt-4 text-lg text-muted-foreground">Last updated: October 9, 2026</p>
 
       <section className="mt-8">
         <h2 className={sectionHeading}>What we collect</h2>
@@ -25,7 +25,10 @@ export default function PrivacyPage() {
           payment details, and the site has no comments, sign-up form or user profiles.
         </p>
         <p className={paragraph}>
-          The site does not currently use analytics, advertising or tracking cookies.
+          We use Vercel Web Analytics to count page views. It does not set cookies and does not collect
+          your name, email address or anything else that identifies you personally. We see totals only,
+          such as which pages were read, the site a visit came from, the country, and the type of
+          browser and device. The site does not use advertising or tracking cookies.
         </p>
       </section>
 
@@ -58,7 +61,7 @@ export default function PrivacyPage() {
       <section className="mt-8">
         <h2 className={sectionHeading}>Changes to this policy</h2>
         <p className={paragraph}>
-          If we add analytics, advertising, affiliate links or a newsletter, we will update this page
+          If we add advertising, affiliate links, a newsletter or other analytics tools, we will update this page
           before those features go live and change the date above.
         </p>
       </section>

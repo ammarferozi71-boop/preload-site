@@ -1,5 +1,6 @@
 import './globals.css';
 import type { Metadata } from 'next';
+import Script from 'next/script';
 import { IBM_Plex_Sans } from 'next/font/google';
 import { SITE_NAME, SITE_TAGLINE, SITE_DESCRIPTION, SITE_URL_RESOLVED, GOOGLE_SITE_VERIFICATION } from '@/lib/site';
 import { Header } from '@/components/layout/Header';
@@ -74,6 +75,11 @@ export default function RootLayout({
           <SearchModal />
         </SearchProvider>
         <Toaster />
+        {/* Vercel Web Analytics: cookieless page-view counts. Enabled per project in the Vercel dashboard. */}
+        <Script id="vercel-analytics-init" strategy="afterInteractive">
+          {`window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };`}
+        </Script>
+        <Script src="/_vercel/insights/script.js" strategy="afterInteractive" />
       </body>
     </html>
   );
