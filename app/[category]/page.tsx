@@ -14,7 +14,7 @@ import { TrendingList } from '@/components/articles/TrendingList';
 import { ArticleCard } from '@/components/articles/ArticleCard';
 import { NewsletterSignup } from '@/components/articles/NewsletterSignup';
 import { Breadcrumbs } from '@/components/articles/Breadcrumbs';
-import { SITE_NAME, SITE_URL_RESOLVED } from '@/lib/site';
+import { SITE_NAME, SITE_URL_RESOLVED, DEFAULT_SOCIAL_IMAGE } from '@/lib/site';
 
 export const revalidate = 300;
 
@@ -35,6 +35,7 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
     description: category.description || `Latest ${category.name} articles from ${SITE_NAME}`,
     alternates: { canonical: `${SITE_URL_RESOLVED}/${category.slug}` },
     openGraph: {
+      images: [DEFAULT_SOCIAL_IMAGE],
       title: `${category.name} — ${SITE_NAME}`,
       description: category.description || `Latest ${category.name} articles`,
       url: `${SITE_URL_RESOLVED}/${category.slug}`,

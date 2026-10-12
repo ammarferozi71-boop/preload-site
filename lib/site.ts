@@ -100,3 +100,11 @@ export function getInitials(name: string): string {
 export function thumbFor(src: string): string {
   return src.replace(/^(\/images\/(?:games|guides)\/.+)\.(jpg|webp)$/, '$1-thumb.$2');
 }
+
+// Site-wide social image for pages that do not set their own (articles keep theirs).
+export const DEFAULT_SOCIAL_IMAGE = {
+  url: '/images/og-default.png',
+  width: 1200,
+  height: 630,
+  alt: `${SITE_NAME}: ${SITE_TAGLINE}`,
+};
