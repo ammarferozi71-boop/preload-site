@@ -4,8 +4,14 @@ import Image from 'next/image';
 import { getGames, getLatestArticles, getCategories } from '@/lib/queries';
 import { formatDate, getArticleUrl, thumbFor, SITE_URL_RESOLVED, SITE_NAME } from '@/lib/site';
 import type { ArticleWithRelations, Game } from '@/lib/types';
+import type { Metadata } from 'next';
 
 export const revalidate = 300;
+
+// One URL per page: the home page names its own canonical address.
+export const metadata: Metadata = {
+  alternates: { canonical: `${SITE_URL_RESOLVED}/` },
+};
 
 const boardDate = (iso: string) =>
   new Date(`${iso}T12:00:00Z`).toLocaleDateString('en-US', { month: 'short', day: 'numeric', timeZone: 'UTC' });
