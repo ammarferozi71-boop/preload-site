@@ -392,6 +392,10 @@
           "text": "Modern Warfare 4 opens PC preloading on October 15, eight days before launch. See [Modern Warfare 4's PC requirements, preload time and install size](/requirements/modern-warfare-4-pc-requirements-preload)."
         },
         {
+          "type": "paragraph",
+          "text": "For GTA 6 on PS5, [GTA 6 release time by time zone](/releases/gta-6-release-time-by-time-zone) converts the reported unlock moment into Eastern, Central, Mountain and Pacific time."
+        },
+        {
           "type": "heading",
           "level": 2,
           "text": "Before you preload",
@@ -1972,6 +1976,10 @@
           "text": "When Rockstar or the console stores publish the install size and unlock time, both will be added here."
         },
         {
+          "type": "paragraph",
+          "text": "Meanwhile, the PS5 unlock times reported from PlayStation Store listings, which do not come from a Rockstar announcement, are converted to Eastern, Central, Mountain and Pacific time in [GTA 6 release time by time zone](/releases/gta-6-release-time-by-time-zone)."
+        },
+        {
           "type": "heading",
           "level": 2,
           "text": "Quick answers",
@@ -2277,9 +2285,9 @@
       "title": "GTA 6 Release Time: When It Unlocks in Your Time Zone",
       "slug": "gta-6-release-time-by-time-zone",
       "excerpt": "Reported PlayStation Store listings put the GTA 6 unlock at midnight Eastern on November 19, 2026. US time zones, other regions and what is not confirmed.",
-      "hero_image": "",
-      "hero_image_alt": "GTA 6 Release Time: When It Unlocks in Your Time Zone",
-      "hero_image_caption": "",
+      "hero_image": "/images/articles/gta-6-release-time-by-time-zone-hero.webp",
+      "hero_image_alt": "Table card of the reported GTA 6 PS5 unlock: 12:00 a.m. Eastern on Thursday November 19, 11 p.m. Central, 10 p.m. Mountain and 9 p.m. Pacific on Wednesday November 18, all one moment at 05:00 UTC",
+      "hero_image_caption": "Graphic: Preload, drawn from the reported unlock times on this page",
       "body": [
         {
           "type": "paragraph",
@@ -2432,6 +2440,10 @@
         },
         {
           "type": "paragraph",
+          "text": "Getting ready to download? [GTA 6 install size and preload: how to prepare](/install/gta-6-install-size-preload) covers how much space to clear, and [how preloading works on each platform](/install/how-game-preloading-works) explains what the early download does and does not do."
+        },
+        {
+          "type": "paragraph",
           "text": "We will update this page when Rockstar, PlayStation or Xbox publishes an official unlock time."
         },
         {
@@ -2465,7 +2477,7 @@
       "seo_title": "GTA 6 Release Time by Time Zone: Reported PS5 Unlock Times",
       "seo_description": "Reported PlayStation Store listings put the GTA 6 unlock at midnight Eastern on November 19, 2026. US time zones, other regions and what is not confirmed.",
       "canonical_url": null,
-      "social_image": null,
+      "social_image": "/images/articles/gta-6-release-time-by-time-zone-social.png",
       "reading_time": 3,
       "created_at": "2026-10-11T12:18:37Z"
     }
