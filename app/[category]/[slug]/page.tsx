@@ -19,7 +19,7 @@ import { RelatedArticles } from '@/components/articles/RelatedArticles';
 import { TableOfContents } from '@/components/articles/TableOfContents';
 import { extractHeadings } from '@/lib/article-headings';
 import { NewsletterSignup } from '@/components/articles/NewsletterSignup';
-import { formatDate, SITE_NAME, SITE_URL_RESOLVED } from '@/lib/site';
+import { formatDate, SITE_NAME, SITE_URL_RESOLVED, DEFAULT_SOCIAL_IMAGE } from '@/lib/site';
 import type { BodyBlock } from '@/lib/types';
 
 export const revalidate = 300;
@@ -57,7 +57,7 @@ export async function generateMetadata({
       title: seoTitle,
       description: seoDesc,
       url,
-      images: ogImage ? [{ url: ogImage, width: 1200, height: 630 }] : [],
+      images: ogImage ? [{ url: ogImage, width: 1200, height: 630 }] : [DEFAULT_SOCIAL_IMAGE],
       publishedTime: article.publish_date,
       modifiedTime: article.updated_date || undefined,
       authors: article.author?.name ? [article.author.name] : [],
@@ -67,7 +67,7 @@ export async function generateMetadata({
       card: 'summary_large_image',
       title: seoTitle,
       description: seoDesc,
-      images: ogImage ? [ogImage] : [],
+      images: ogImage ? [ogImage] : [DEFAULT_SOCIAL_IMAGE.url],
     },
   };
 }

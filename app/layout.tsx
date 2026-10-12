@@ -2,7 +2,7 @@ import './globals.css';
 import type { Metadata } from 'next';
 import Script from 'next/script';
 import { IBM_Plex_Sans } from 'next/font/google';
-import { SITE_NAME, SITE_TAGLINE, SITE_DESCRIPTION, SITE_URL_RESOLVED, GOOGLE_SITE_VERIFICATION } from '@/lib/site';
+import { SITE_NAME, SITE_TAGLINE, SITE_DESCRIPTION, SITE_URL_RESOLVED, GOOGLE_SITE_VERIFICATION, DEFAULT_SOCIAL_IMAGE } from '@/lib/site';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
 import { SearchProvider } from '@/components/search/SearchProvider';
@@ -26,11 +26,13 @@ export const metadata: Metadata = {
   },
   description: SITE_DESCRIPTION,
   openGraph: {
+    images: [DEFAULT_SOCIAL_IMAGE],
     type: 'website',
     siteName: SITE_NAME,
     url: SITE_URL_RESOLVED,
   },
   twitter: {
+    images: [DEFAULT_SOCIAL_IMAGE.url],
     card: 'summary_large_image',
   },
   ...(GOOGLE_SITE_VERIFICATION ? { verification: { google: GOOGLE_SITE_VERIFICATION } } : {}),

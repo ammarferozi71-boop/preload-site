@@ -11,7 +11,7 @@ import { LoadMoreList } from '@/components/articles/LoadMoreList';
 import { TrendingList } from '@/components/articles/TrendingList';
 import { Breadcrumbs } from '@/components/articles/Breadcrumbs';
 import { NewsletterSignup } from '@/components/articles/NewsletterSignup';
-import { SITE_NAME, SITE_URL_RESOLVED } from '@/lib/site';
+import { SITE_NAME, SITE_URL_RESOLVED, DEFAULT_SOCIAL_IMAGE } from '@/lib/site';
 
 export const revalidate = 300;
 
@@ -26,6 +26,7 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
     description: topic.description || `Release, install and requirements coverage for ${topic.name}.`,
     alternates: { canonical: `${SITE_URL_RESOLVED}/topics/${topic.slug}` },
     openGraph: {
+      images: [DEFAULT_SOCIAL_IMAGE],
       title: `${topic.name} — ${SITE_NAME}`,
       description: topic.description || `Latest ${topic.name} articles`,
       url: `${SITE_URL_RESOLVED}/topics/${topic.slug}`,

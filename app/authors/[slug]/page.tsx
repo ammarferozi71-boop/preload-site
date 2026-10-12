@@ -10,7 +10,7 @@ import {
 import { LoadMoreList } from '@/components/articles/LoadMoreList';
 import { Breadcrumbs } from '@/components/articles/Breadcrumbs';
 import { NewsletterSignup } from '@/components/articles/NewsletterSignup';
-import { SITE_NAME, SITE_URL_RESOLVED } from '@/lib/site';
+import { SITE_NAME, SITE_URL_RESOLVED, DEFAULT_SOCIAL_IMAGE } from '@/lib/site';
 import { Twitter, Linkedin } from 'lucide-react';
 
 export const revalidate = 300;
@@ -29,7 +29,7 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
       title: `${author.name} — ${SITE_NAME}`,
       description: author.bio || `Articles by ${author.name}`,
       url: `${SITE_URL_RESOLVED}/authors/${author.slug}`,
-      images: author.avatar_url ? [{ url: author.avatar_url }] : [],
+      images: author.avatar_url ? [{ url: author.avatar_url }] : [DEFAULT_SOCIAL_IMAGE],
     },
   };
 }
