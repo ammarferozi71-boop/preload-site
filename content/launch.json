@@ -1351,14 +1351,18 @@
       "id": "f93c03f7-38c1-43f7-b7fa-d871a180ceb5",
       "title": "Modern Warfare 4 PC Requirements, Preload Time and Install Size",
       "slug": "modern-warfare-4-pc-requirements-preload",
-      "excerpt": "Modern Warfare 4 needs 115 GB of SSD space, TPM 2.0 and Secure Boot on PC. PC preload starts October 15 and the game launches October 23, 2026.",
-      "hero_image": "/images/games/modern-warfare-4.jpg",
-      "hero_image_alt": "Call of Duty: Modern Warfare 4 official screenshot",
-      "hero_image_caption": "Image: Activision / Steam",
+      "excerpt": "Modern Warfare 4 needs 115 GB of SSD space, TPM 2.0 and Secure Boot on PC. PC preload starts October 15 at 9 AM PT and the game launches October 23.",
+      "hero_image": "/images/articles/modern-warfare-4-pc-requirements-preload-hero.webp",
+      "hero_image_alt": "Preload graphic: Modern Warfare 4 PC preload opens October 15 at 9 AM PT for digital pre-purchases, 115 GB SSD required, TPM 2.0 and Secure Boot required on PC",
+      "hero_image_caption": "Graphic: Preload. Source: Call of Duty blog",
       "body": [
         {
           "type": "paragraph",
-          "text": "**Call of Duty: Modern Warfare 4 launches on October 23, 2026**, and PC preloading opens on **October 15 at 9:00 AM PT**. On PC you need **115 GB of SSD space**, and the game will not start unless **TPM 2.0 and Secure Boot** are enabled."
+          "text": "**Call of Duty: Modern Warfare 4 launches on October 23, 2026, and PC preloading begins on October 15 at 9 AM PT.**   On PC it needs 115 GB of SSD space, TPM 2.0 and Secure Boot.  "
+        },
+        {
+          "type": "paragraph",
+          "text": "Every spec, date and requirement on this page comes from the Call of Duty blog's PC post of September 29, 2026, unless another Call of Duty post is named.  The time conversions in the second table are our own arithmetic."
         },
         {
           "type": "heading",
@@ -1369,35 +1373,71 @@
         {
           "type": "table",
           "headers": [
-            "",
-            "Date"
+            "What",
+            "When",
+            "Source scope"
           ],
           "rows": [
             [
-              "**PC preload opens**",
-              "October 15, 2026, 9:00 AM PT"
+              "PC preload opens",
+              "October 15, 9 AM PT, for players who pre-purchase digitally on PC",
+              "PC only"
             ],
             [
-              "**Campaign early access**",
-              "October 16, 2026 (digital pre-purchase)"
+              "Campaign Early Access",
+              "Starts October 16, for digital pre-orders of the Standard Digital or Vault Edition",
+              "Call of Duty blog, 12 June 2026"
             ],
             [
-              "**Full launch**",
-              "October 23, 2026"
+              "Full game on PC",
+              "October 23 at midnight local time",
+              "PC only (Call of Duty blog PC post)"
             ],
             [
-              "**Platforms**",
-              "PC, PS5, Xbox Series X|S, Nintendo Switch 2"
-            ],
-            [
-              "**PC launchers**",
-              "Steam, Battle.net, Xbox app"
+              "PC stores",
+              "Xbox on PC, Battle.net and Steam",
+              "PC only"
             ]
           ]
         },
         {
           "type": "paragraph",
-          "text": "9:00 AM PT is 12:00 PM ET, 5:00 PM in the UK and 9:00 PM in Pakistan."
+          "text": "The Call of Duty pre-order guide lists the October 23, 2026 launch for PlayStation 5, Xbox Series X|S, PC and Nintendo Switch 2; the midnight local time above comes from the PC post.  "
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "PC preload time in other time zones",
+          "id": "pc-preload-time-in-other-time-zones"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Time zone on October 15",
+            "Preload opens (our conversion of 9 AM PT)"
+          ],
+          "rows": [
+            [
+              "Pacific (PDT, UTC-7)",
+              "9:00 AM"
+            ],
+            [
+              "Eastern (EDT, UTC-4)",
+              "12:00 PM"
+            ],
+            [
+              "UTC",
+              "4:00 PM"
+            ],
+            [
+              "UK (BST, UTC+1)",
+              "5:00 PM"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "We converted 9 AM PT ourselves, using the summer time offsets shown in the table, which apply in the US and UK on October 15, 2026. The Call of Duty blog's PC post states the preload time as 9 AM PT; the other times are our conversion. "
         },
         {
           "type": "heading",
@@ -1406,73 +1446,65 @@
           "id": "pc-system-requirements"
         },
         {
-          "type": "paragraph",
-          "text": "These are the three tiers Activision published for PC, as reported by TalkEsport."
-        },
-        {
           "type": "table",
           "headers": [
             "",
             "Minimum",
-            "Recommended",
-            "Ray tracing"
+            "Recommended (90 FPS multiplayer on High)",
+            "Ultra (High ray tracing at 4K upscaled)"
           ],
           "rows": [
             [
-              "**OS**",
-              "Windows 10 64-bit",
-              "Windows 11 64-bit",
+              "OS",
+              "Windows 10 64-bit, latest update",
+              "Windows 11 64-bit, latest update",
               "Windows 11 64-bit"
             ],
             [
-              "**CPU**",
-              "Ryzen 5 1400 / Core i5-6600",
-              "Ryzen 5 3600 / Core i7-8700K",
-              "Ryzen 7 3700X / Core i7-10700K"
+              "CPU",
+              "AMD Ryzen 5 1400 or Intel Core i5-6600",
+              "AMD Ryzen 5 3600 or Intel Core i7-8700K",
+              "AMD Ryzen 7 3700X or Intel Core i7-10700K"
             ],
             [
-              "**GPU**",
-              "RX 470 / GTX 970 / Arc A580",
-              "RX 6600 XT / RTX 3060 Ti / Arc B580",
-              "RX 9070 XT / RTX 5070 Ti"
+              "GPU",
+              "Radeon RX 470, GeForce GTX 970 / 1060 or Intel Arc A580",
+              "Radeon RX 6600 XT, GeForce RTX 3060 Ti or Intel Arc B580",
+              "Radeon RX 9070 XT or GeForce RTX 5070 Ti"
             ],
             [
-              "**Video memory**",
+              "Video memory",
               "3 GB",
               "8 GB",
               "16 GB"
             ],
             [
-              "**RAM**",
+              "RAM",
               "8 GB",
               "16 GB",
               "32 GB"
             ],
             [
-              "**Storage**",
-              "115 GB SSD",
-              "115 GB SSD",
-              "115 GB SSD"
+              "Storage",
+              "115 GB, SSD required",
+              "115 GB, SSD required",
+              "115 GB, SSD required"
             ]
           ]
         },
         {
           "type": "paragraph",
-          "text": "The minimum tier is low for a 2026 release: a GTX 970 and 8 GB of RAM. The ray tracing tier is a large step up, with 32 GB of RAM and a 16 GB graphics card."
+          "text": "The blog says these specs are valid for launch and may be updated in the future. "
         },
         {
           "type": "heading",
           "level": 2,
-          "text": "TPM 2.0 and Secure Boot are required",
-          "id": "tpm-20-and-secure-boot-are-required"
+          "text": "TPM 2.0, Secure Boot and AVX",
+          "id": "tpm-20-secure-boot-and-avx"
         },
         {
           "type": "paragraph",
-          "text": "Modern Warfare 4 requires **TPM 2.0 and Secure Boot** to be enabled on PC, and your CPU must support AVX. Most PCs built in the last several years have both features, but they are often switched off in the motherboard settings."
-        },
-        {
-          "type": "paragraph",
-          "text": "Check this before launch day, because turning Secure Boot on can involve changing firmware settings. Our guide shows [how to check TPM 2.0 and Secure Boot on Windows](/guides/check-tpm-secure-boot-windows) in two minutes."
+          "text": "The Call of Duty blog says TPM 2.0 and Secure Boot are required to play Modern Warfare 4 on PC.  It also says only Intel and AMD processors with the AVX instruction set are supported at this time.  Our guide shows [how to check TPM 2.0 and Secure Boot on Windows](/guides/check-tpm-secure-boot-windows) before preload day. "
         },
         {
           "type": "heading",
@@ -1482,96 +1514,40 @@
         },
         {
           "type": "paragraph",
-          "text": "All three tiers list **115 GB on an SSD**. A hard drive is not supported."
+          "text": "The Minimum, Recommended and Ultra specs in the blog's PC post each list 115 GB with an SSD required.    The blog adds that additional storage space may be required for mandatory game updates, so leave room beyond 115 GB.  If space is tight, see [how to free up SSD space for large games](/guides/free-up-ssd-space-for-large-games). "
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Before preload day: checklist",
+          "id": "before-preload-day-checklist"
         },
         {
           "type": "list",
           "items": [
-            "Leave more than 115 GB free. Updates and shader data need working room.",
-            "If you are short on space, see [how to free up SSD space for large games](/guides/free-up-ssd-space-for-large-games).",
-            "Console install sizes have not been listed in the PC specs."
+            "Pre-purchase digitally on PC if you want to preload: the blog ties PC preloading to digital pre-purchases.",
+            "Free more than 115 GB on an SSD.",
+            "Turn on TPM 2.0 and Secure Boot.",
+            "Check your CPU is an Intel or AMD processor with AVX.",
+            "Preloading opens October 15 at 9 AM PT.  For how preloading works on each store, read [how game preloading works](/install/how-game-preloading-works)."
           ]
         },
         {
           "type": "heading",
           "level": 2,
-          "text": "How preloading works for this launch",
-          "id": "how-preloading-works-for-this-launch"
-        },
-        {
-          "type": "paragraph",
-          "text": "Preloading downloads the game files ahead of release so you can play as soon as it unlocks. On PC it opens October 15, eight days before launch. Digital pre-purchase players also get the campaign on October 16."
-        },
-        {
-          "type": "paragraph",
-          "text": "If you have not preloaded a game before, read [how preloading works on Steam, Xbox, PlayStation and Battle.net](/install/how-game-preloading-works)."
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "PC features",
-          "id": "pc-features"
-        },
-        {
-          "type": "paragraph",
-          "text": "According to the same specs announcement, the PC version includes:"
+          "text": "PC features listed on the Call of Duty blog",
+          "id": "pc-features-listed-on-the-call-of-duty-blog"
         },
         {
           "type": "list",
           "items": [
-            "More than 800 customization options across graphics, gameplay and interface",
-            "Ray tracing across game modes",
-            "Multiple upscaling options",
-            "An in-game benchmark tool",
-            "Shader preloading",
-            "HDR10+ Gaming support"
+            "More than 800 customization options across graphics, gameplay, input devices, interface and more.",
+            "Ray tracing in Campaign, Multiplayer and DMZ.",
+            "A range of upscaling and frame generation technologies, including AMD FSR Redstone.",
+            "A built-in benchmark tool.",
+            "Advanced Shader Delivery, which provides precompiled shaders ahead of time.",
+            "HDR10+."
           ]
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "Quick answers",
-          "id": "quick-answers"
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "How big is Modern Warfare 4 on PC?",
-          "id": "how-big-is-modern-warfare-4-on-pc"
-        },
-        {
-          "type": "paragraph",
-          "text": "115 GB, and it must be installed on an SSD."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "When can I preload Modern Warfare 4 on PC?",
-          "id": "when-can-i-preload-modern-warfare-4-on-pc"
-        },
-        {
-          "type": "paragraph",
-          "text": "From October 15, 2026 at 9:00 AM PT."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "Does Modern Warfare 4 need TPM 2.0?",
-          "id": "does-modern-warfare-4-need-tpm-20"
-        },
-        {
-          "type": "paragraph",
-          "text": "Yes. TPM 2.0 and Secure Boot must both be enabled on PC."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "Can a GTX 970 run Modern Warfare 4?",
-          "id": "can-a-gtx-970-run-modern-warfare-4"
-        },
-        {
-          "type": "paragraph",
-          "text": "It is listed as a minimum GPU, alongside the RX 470 and Arc A580."
         },
         {
           "type": "heading",
@@ -1582,7 +1558,9 @@
         {
           "type": "list",
           "items": [
-            "[TalkEsport, Modern Warfare 4 PC specs, features and preload date](https://www.talkesport.com/news/modern-warfare-4-pc-specs-preload-date/)"
+            "[Call of Duty blog: Modern Warfare 4 PC trailer, tech specs and features](https://www.callofduty.com/blog/2026/09/call-of-duty-modern-warfare-4-pc-trailer-tech-specs-features)",
+            "[Call of Duty blog: Modern Warfare 4 pre-order guide](https://www.callofduty.com/blog/2026/05/call-of-duty-modern-warfare-4-preorder-benefits-game-editions-details)",
+            "[Call of Duty blog: Campaign Early Access confirmed](https://www.callofduty.com/blog/2026/06/call-of-duty-modern-warfare-4-campaign-early-access)"
           ]
         }
       ],
@@ -1596,16 +1574,16 @@
         "xbox"
       ],
       "publish_date": "2026-10-04T09:30:00Z",
-      "updated_date": null,
+      "updated_date": "2026-10-14T02:20:13Z",
       "featured": true,
       "trending": true,
       "editor_choice": false,
       "review_score": null,
       "review_product": null,
       "seo_title": "Modern Warfare 4 PC Requirements, Preload & Install Size",
-      "seo_description": "Modern Warfare 4 needs 115 GB of SSD space, TPM 2.0 and Secure Boot on PC. PC preload starts October 15 and the game launches October 23, 2026.",
+      "seo_description": "Modern Warfare 4 needs 115 GB of SSD space, TPM 2.0 and Secure Boot on PC. PC preload starts October 15 at 9 AM PT and the game launches October 23.",
       "canonical_url": null,
-      "social_image": "/images/games/modern-warfare-4.jpg",
+      "social_image": "/images/articles/modern-warfare-4-pc-requirements-preload-social.png",
       "reading_time": 3,
       "created_at": "2026-10-04T09:30:00Z"
     },
