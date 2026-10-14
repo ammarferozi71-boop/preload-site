@@ -1,0 +1,8 @@
+{
+  "tool": "release-calendar",
+  "generated_at": "2026-10-14T12:00:00Z",
+  "max_age_days": 7,
+  "min_rows": 3,
+  "rows": [],
+  "facts": {}
+}

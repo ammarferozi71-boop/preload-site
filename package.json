@@ -4,10 +4,12 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "node scripts/fetch-images.mjs && next build",
+    "build": "node scripts/check-tool-data.mjs && node scripts/fetch-images.mjs && next build",
     "start": "next start",
     "lint": "next lint",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "test": "node --test tests/*.test.mjs",
+    "check:tools": "node scripts/check-tool-data.mjs"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
