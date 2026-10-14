@@ -1,6 +1,8 @@
 import type { MetadataRoute } from 'next';
 import { getAllArticleSlugs, getAllAuthorSlugs, getAllTopicSlugs, getCategories } from '@/lib/queries';
 import { CONTACT_EMAIL, SITE_URL_RESOLVED } from '@/lib/site';
+import releaseData from '@/content/tools/release-calendar.json';
+import { isPublishable } from '@/lib/tools/validate.mjs';
 
 export const revalidate = 3600;
 export const dynamic = 'force-dynamic';
@@ -57,5 +59,10 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${SITE_URL_RESOLVED}/topics`, lastModified: newest, changeFrequency: 'weekly', priority: 0.5 },
   ];
 
-  return [...staticUrls, ...articleUrls, ...categoryUrls, ...authorUrls, ...topicUrls];
+  // Tool pages are listed only once their verified data is public (see lib/tools/validate.mjs).
+  const toolUrls: MetadataRoute.Sitemap = isPublishable(releaseData as any)
+    ? [{ url: `${SITE_URL_RESOLVED}/tools/release-calendar`, lastModified: new Date((releaseData as any).generated_at), changeFrequency: 'daily', priority: 0.9 }]
+    : [];
+
+  return [...staticUrls, ...toolUrls, ...articleUrls, ...categoryUrls, ...authorUrls, ...topicUrls];
 }

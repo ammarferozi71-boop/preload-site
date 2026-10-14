@@ -1,0 +1,24 @@
+name: checks
+on:
+  pull_request:
+  push:
+    branches: [main]
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci --no-audit --no-fund
+      - name: Unit tests (tool logic and data validation)
+        run: npm test
+      - name: Verified-data check (content/tools)
+        run: npm run check:tools
+      - name: Type check
+        run: npm run typecheck
+      - name: Production build
+        run: npx next build
