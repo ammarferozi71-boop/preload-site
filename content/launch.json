@@ -2262,30 +2262,18 @@
       "id": "873c3964-f7d2-4a2c-9b66-024f03eaa69b",
       "title": "GTA 6 Release Time: When It Unlocks in Your Time Zone",
       "slug": "gta-6-release-time-by-time-zone",
-      "excerpt": "Reported PlayStation Store listings put the GTA 6 unlock at midnight Eastern on November 19, 2026. US time zones, other regions and what is not confirmed.",
+      "excerpt": "The US PlayStation Store lists GTA 6 at 05:00 UTC on 19 Nov 2026: midnight Eastern, 9 p.m. Pacific on 18 Nov. Times for each US zone, plus the PS5 preload.",
       "hero_image": "/images/articles/gta-6-release-time-by-time-zone-hero.webp",
-      "hero_image_alt": "Table card of the reported GTA 6 PS5 unlock: 12:00 a.m. Eastern on Thursday November 19, 11 p.m. Central, 10 p.m. Mountain and 9 p.m. Pacific on Wednesday November 18, all one moment at 05:00 UTC",
-      "hero_image_caption": "Graphic: Preload, drawn from the reported unlock times on this page",
+      "hero_image_alt": "Preload graphic of GTA 6 unlock times in US time zones from the US PlayStation Store listing checked 14 Oct 2026: 12:00 a.m. Eastern on Thursday 19 November, 11:00 p.m. Central, 10:00 p.m. Mountain and 9:00 p.m. Pacific on Wednesday 18 November, listed at 05:00 UTC with a 7-Day Pre-load",
+      "hero_image_caption": "Graphic: Preload, converted from the US PlayStation Store listing",
       "body": [
         {
           "type": "paragraph",
-          "text": "**PlayStation Store listings reported on September 8, 2026 show GTA 6 unlocking in the United States at 12:00 a.m. Eastern on November 19, 2026, which is 9 p.m. Pacific on November 18.**  Rockstar has not announced an unlock time, and no Xbox time has been published. "
+          "text": "*Checked on 14 October 2026 on the US PlayStation Store and Xbox store.*"
         },
         {
-          "type": "heading",
-          "level": 2,
-          "text": "The short version",
-          "id": "the-short-version"
-        },
-        {
-          "type": "list",
-          "items": [
-            "**Reported US unlock (PS5 digital):** one moment for the whole country, 05:00 UTC on November 19, 2026.",
-            "**Where the time comes from:** regional PlayStation Store listings, as reported by two outlets on September 8, 2026.",
-            "**Not from Rockstar:** the report says none of the times come from a Rockstar announcement.",
-            "**Xbox:** Microsoft has not published unlock times.",
-            "**Could change:** the report says the listings could change before launch."
-          ]
+          "type": "paragraph",
+          "text": "**The US PlayStation Store lists Grand Theft Auto VI for release at 05:00 UTC on 19 November 2026, which is 12:00 a.m. Eastern on 19 November and 9:00 p.m. Pacific on 18 November.**  The same listing shows a 7-Day Pre-load for both editions. "
         },
         {
           "type": "heading",
@@ -2295,134 +2283,119 @@
         },
         {
           "type": "paragraph",
-          "text": "The United States and Canada share a single window anchored to Eastern time, at 05:00 UTC on November 19, according to the September 8 report of the PlayStation Store listings.  That means the game does not unlock at midnight in every US time zone: the further west you are, the earlier in the evening of November 18 it is reported to open. "
-        },
-        {
-          "type": "paragraph",
-          "text": "The rows below are our conversions of that one reported 05:00 UTC moment into US clock times. They are not separate listings."
+          "text": "The PlayStation Store lists one moment, 05:00 UTC on 19 November 2026.  The rows below are our conversions of that moment, using the standard-time offsets in force in late November."
         },
         {
           "type": "table",
           "headers": [
             "US time zone",
-            "Reported unlock, converted from 05:00 UTC"
+            "Offset",
+            "GTA 6 unlock on PS5"
           ],
           "rows": [
             [
               "**Eastern (ET)**",
-              "12:00 a.m., Thursday, November 19"
+              "UTC−5",
+              "12:00 a.m., Thursday 19 November"
             ],
             [
               "**Central (CT)**",
-              "11:00 p.m., Wednesday, November 18"
+              "UTC−6",
+              "11:00 p.m., Wednesday 18 November"
             ],
             [
               "**Mountain (MT)**",
-              "10:00 p.m., Wednesday, November 18"
+              "UTC−7",
+              "10:00 p.m., Wednesday 18 November"
             ],
             [
               "**Pacific (PT)**",
-              "9:00 p.m., Wednesday, November 18"
+              "UTC−8",
+              "9:00 p.m., Wednesday 18 November"
+            ],
+            [
+              "**Alaska (AKT)**",
+              "UTC−9",
+              "8:00 p.m., Wednesday 18 November"
+            ],
+            [
+              "**Hawaii (HST)**",
+              "UTC−10",
+              "7:00 p.m., Wednesday 18 November"
             ]
           ]
         },
         {
           "type": "paragraph",
-          "text": "Source for the 05:00 UTC window: PlayStation Store listings as reported by God is a Geek on September 8, 2026.  A second outlet, MP1st, reported the same day that the US and Canada share a UTC-5 window with Colombia, Ecuador, Panama and Peru. "
+          "text": "So the further west you are, the earlier on the evening of 18 November the game starts. "
         },
         {
           "type": "heading",
           "level": 2,
-          "text": "Reported unlock times by region",
-          "id": "reported-unlock-times-by-region"
+          "text": "Preloading on PS5",
+          "id": "preloading-on-ps5"
         },
         {
           "type": "paragraph",
-          "text": "In total the report counts 63 countries and regions in 15 windows, and outside North America they follow local midnight on November 19 rather than one global moment.  The table gives the windows the report names. The Eastern column is our conversion."
+          "text": "The US PlayStation Store listing shows \"7-Day Pre-load\" under both the Standard and Ultimate editions.  Our estimate, if the window is a full seven days before the listed unlock: 05:00 UTC on 12 November, which is 12:00 a.m. Eastern on Thursday 12 November, and 11:00 p.m. Central, 10:00 p.m. Mountain, 9:00 p.m. Pacific, 8:00 p.m. Alaska and 7:00 p.m. Hawaii on Wednesday 11 November. "
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Xbox Series X|S",
+          "id": "xbox-series-x-s"
+        },
+        {
+          "type": "paragraph",
+          "text": "Xbox's US store page lists Grand Theft Auto VI on pre-order from $79.99, with its pre-order bonus deadline given as 19 November 2026 23:59:59.  The unlock times on this page come from the PlayStation Store listing, so they apply to PS5. "
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Price and editions, for reference",
+          "id": "price-and-editions-for-reference"
         },
         {
           "type": "table",
           "headers": [
-            "Region",
-            "Reported local unlock",
-            "In UTC",
-            "In US Eastern (conversion)"
+            "Edition",
+            "PlayStation Store (US)",
+            "Xbox store (US)"
           ],
           "rows": [
             [
-              "**New Zealand**",
-              "12:00 a.m. NZDT, November 19",
-              "11:00, November 18",
-              "6:00 a.m., November 18"
+              "Standard",
+              "$79.99",
+              "from $79.99"
             ],
             [
-              "**Mainland Europe**",
-              "12:00 a.m. CET, November 19",
-              "23:00, November 18",
-              "6:00 p.m., November 18"
-            ],
-            [
-              "**UK and Ireland**",
-              "12:00 a.m. GMT, November 19",
-              "00:00, November 19",
-              "7:00 p.m., November 18"
-            ],
-            [
-              "**US and Canada**",
-              "12:00 a.m. Eastern, November 19",
-              "05:00, November 19",
-              "12:00 a.m., November 19"
-            ],
-            [
-              "**Mexico and several Central American stores**",
-              "12:00 a.m. CST, November 19",
-              "06:00, November 19",
-              "1:00 a.m., November 19"
+              "Ultimate",
+              "$99.99",
+              "from $99.99"
             ]
           ]
         },
         {
           "type": "paragraph",
-          "text": "All rows are PlayStation Store listings as reported on September 8, 2026.   New Zealand is the earliest window the report names. "
+          "text": "Prices as read on 14 October 2026. "
         },
         {
           "type": "heading",
           "level": 2,
-          "text": "What is not confirmed",
-          "id": "what-is-not-confirmed"
+          "text": "Before launch night: checklist",
+          "id": "before-launch-night-checklist"
         },
         {
           "type": "list",
           "items": [
-            "**Any time from Rockstar.** The times come from store listings, not an announcement.  One of the two reports credits Rockstar in its introduction and the PlayStation Store in its body, so treat headlines that say \"Rockstar confirms\" with care.",
-            "**Xbox Series X|S.** No Xbox unlock time has been published.",
-            "**Disc copies.** The reported times apply to the PS5 digital version only.",
-            "**Whether the listings still say the same thing.** They were reported on September 8, 2026 and could change.",
-            "**Changing your console region to start early.** One outlet says Xbox players can switch region to New Zealand and cites no source for it.  With no Xbox times published, there is nothing to show it works, and this page does not recommend it."
-          ]
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "What to do before launch night",
-          "id": "what-to-do-before-launch-night"
-        },
-        {
-          "type": "list",
-          "items": [
-            "**Use your own time zone's row, not midnight.** In Central, Mountain and Pacific time the reported unlock falls on the evening of November 18.",
-            "**Check the store page again in launch week.** The listed time is the one that counts, and the report says it could change.",
-            "**Download ahead of time if you can.** The same report expects preloading to begin around November 12.  Our [GTA 6 install size and preload page](/install/gta-6-install-size-preload) covers how much space to plan for.",
-            "**On Xbox, wait for an official time.** None has been published."
+            "**Use your own time zone's row, not midnight.** Everywhere west of Eastern time, the unlock falls on the evening of 18 November.",
+            "**Clear space by 11 November.** West of Eastern time, our estimated preload start falls on the evening of 11 November. Our [GTA 6 install size and preload page](/install/gta-6-install-size-preload) covers how much space to plan for.",
+            "**Check the store page again in launch week** in case the listing changes."
           ]
         },
         {
           "type": "paragraph",
-          "text": "Getting ready to download? [GTA 6 install size and preload: how to prepare](/install/gta-6-install-size-preload) covers how much space to clear, and [how preloading works on each platform](/install/how-game-preloading-works) explains what the early download does and does not do."
-        },
-        {
-          "type": "paragraph",
-          "text": "We will update this page when Rockstar, PlayStation or Xbox publishes an official unlock time."
+          "text": "For what the early download does and does not do, see [how preloading works on each platform](/install/how-game-preloading-works)."
         },
         {
           "type": "heading",
@@ -2433,8 +2406,8 @@
         {
           "type": "list",
           "items": [
-            "[God is a Geek, GTA 6 regional launch times (September 8, 2026)](https://godisageek.com/2026/09/gta-6-release-times-by-region/)",
-            "[MP1st, GTA 6 unlock times (September 8, 2026)](https://mp1st.com/news/gta-6-unlock-times-revealed)"
+            "[PlayStation Store, Grand Theft Auto VI (US listing, read 14 Oct 2026)](https://store.playstation.com/en-us/product/EP1004-PPSA01547_00-GTAVISTANDARD001)",
+            "[Xbox store, Grand Theft Auto VI (US, read 14 Oct 2026)](https://www.xbox.com/en-us/games/store/grand-theft-auto-vi/9nl3wwnzlzzn)"
           ]
         }
       ],
@@ -2446,17 +2419,17 @@
         "xbox"
       ],
       "publish_date": "2026-10-11T12:18:37Z",
-      "updated_date": null,
+      "updated_date": "2026-10-14T16:07:17Z",
       "featured": false,
       "trending": false,
       "editor_choice": false,
       "review_score": null,
       "review_product": null,
-      "seo_title": "GTA 6 Release Time by Time Zone: Reported PS5 Unlock Times",
-      "seo_description": "Reported PlayStation Store listings put the GTA 6 unlock at midnight Eastern on November 19, 2026. US time zones, other regions and what is not confirmed.",
+      "seo_title": "GTA 6 Release Time by US Time Zone | Preload",
+      "seo_description": "The US PlayStation Store lists GTA 6 at 05:00 UTC on 19 Nov 2026: midnight Eastern, 9 p.m. Pacific on 18 Nov. Times for each US zone, plus the PS5 preload.",
       "canonical_url": null,
       "social_image": "/images/articles/gta-6-release-time-by-time-zone-social.png",
-      "reading_time": 3,
+      "reading_time": 2,
       "created_at": "2026-10-11T12:18:37Z"
     }
   ],
