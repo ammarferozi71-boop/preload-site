@@ -14,10 +14,11 @@ export const metadata: Metadata = {
 };
 
 export default async function SearchPage({
-  searchParams,
+  searchParams: searchParamsPromise,
 }: {
-  searchParams: { q?: string };
+  searchParams: Promise<{ q?: string }>;
 }) {
+  const searchParams = await searchParamsPromise;
   const query = searchParams.q || '';
   const [categories, authors, results] = await Promise.all([
     getCategories(),

@@ -51,6 +51,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   }));
 
   const staticUrls: MetadataRoute.Sitemap = [
+    { url: `${SITE_URL_RESOLVED}/tools/release-time`, changeFrequency: 'monthly', priority: 0.6 },
     ...['about', 'editorial-standards', 'privacy', ...(CONTACT_EMAIL ? ['contact'] : [])].map(slug => ({url: SITE_URL_RESOLVED+'/'+slug, lastModified: new Date('2026-10-04T08:00:00Z')})),
     { url: SITE_URL_RESOLVED, lastModified: newest, changeFrequency: 'daily', priority: 1.0 },
     { url: `${SITE_URL_RESOLVED}/authors`, lastModified: newest, changeFrequency: 'weekly', priority: 0.5 },

@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, useCallback } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Search, X, Loader2 } from 'lucide-react';
@@ -27,15 +27,17 @@ export function SearchModal() {
   const inputRef = useRef<HTMLInputElement>(null);
   const debounceRef = useRef<ReturnType<typeof setTimeout>>();
 
+  const closeModal = useCallback(() => { setIsOpen(false); setQuery(''); setResults([]); setLoading(false); }, []);
+
   useEffect(() => {
     const openHandler = () => setIsOpen(true);
-    const closeHandler = () => setIsOpen(false);
+    const closeHandler = closeModal;
     const keyHandler = (e: KeyboardEvent) => {
       if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
         e.preventDefault();
         setIsOpen(true);
       }
-      if (e.key === 'Escape') setIsOpen(false);
+      if (e.key === 'Escape') closeModal();
     };
     window.addEventListener('open-search', openHandler);
     window.addEventListener('close-search', closeHandler);
@@ -45,7 +47,7 @@ export function SearchModal() {
       window.removeEventListener('close-search', closeHandler);
       window.removeEventListener('keydown', keyHandler);
     };
-  }, []);
+  }, [closeModal]);
 
   useEffect(() => {
     if (isOpen) {
@@ -53,8 +55,6 @@ export function SearchModal() {
       document.body.style.overflow = 'hidden';
     } else {
       document.body.style.overflow = '';
-      setQuery('');
-      setResults([]);
     }
     return () => {
       document.body.style.overflow = '';
@@ -63,22 +63,20 @@ export function SearchModal() {
 
   useEffect(() => {
     if (debounceRef.current) clearTimeout(debounceRef.current);
-    if (!query.trim()) {
-      setResults([]);
-      return;
-    }
-    setLoading(true);
+    if (!query.trim()) return;
+    const controller = new AbortController();
     debounceRef.current = setTimeout(async () => {
       try {
-        const response=await fetch('/api/articles?'+new URLSearchParams({q:query,limit:'10'}));
+        const response=await fetch('/api/articles?'+new URLSearchParams({q:query,limit:'10'}), { signal: controller.signal });
         if(!response.ok) throw new Error('Search unavailable');
         const data=await response.json() as {articles: SearchResult[]};
-        setResults(data.articles);
-      } catch { setResults([]); }
-      setLoading(false);
+        if (!controller.signal.aborted) setResults(data.articles);
+      } catch { if (!controller.signal.aborted) setResults([]); }
+      if (!controller.signal.aborted) setLoading(false);
     }, 300);
     return () => {
       if (debounceRef.current) clearTimeout(debounceRef.current);
+      controller.abort();
     };
   }, [query]);
 
@@ -86,7 +84,7 @@ export function SearchModal() {
 
   return (
     <div className="fixed inset-0 z-[100] flex items-start justify-center px-4 pt-20">
-      <div className="absolute inset-0 bg-black/70 animate-fade-in" onClick={() => setIsOpen(false)} />
+      <div className="absolute inset-0 bg-black/70 animate-fade-in" onClick={closeModal} />
       <div role="dialog" aria-modal="true" aria-label="Search articles" className="relative z-10 w-full max-w-2xl overflow-hidden rounded-lg border border-border bg-popover shadow-2xl animate-slide-up">
         <div className="flex items-center gap-3 border-b border-border px-4">
           <Search className="h-5 w-5 shrink-0 text-muted-foreground" />
@@ -94,14 +92,14 @@ export function SearchModal() {
             ref={inputRef}
             type="text"
             value={query}
-            onChange={(e) => setQuery(e.target.value)}
+            onChange={(e) => { setQuery(e.target.value); setResults([]); setLoading(Boolean(e.target.value.trim())); }}
             placeholder="Search by game, platform or subject"
             className="flex h-14 w-full bg-transparent text-base text-foreground outline-none placeholder:text-muted-foreground"
             aria-label="Search"
           />
           {loading && <Loader2 className="h-5 w-5 animate-spin text-muted-foreground" />}
           <button
-            onClick={() => setIsOpen(false)}
+            onClick={closeModal}
             className="flex h-8 w-8 items-center justify-center rounded text-muted-foreground hover:bg-secondary"
             aria-label="Close search"
           >
@@ -125,7 +123,7 @@ export function SearchModal() {
                   <li key={result.id}>
                     <Link
                       href={url}
-                      onClick={() => setIsOpen(false)}
+                      onClick={closeModal}
                       className="flex gap-4 px-4 py-3 transition-colors hover:bg-secondary"
                     >
                       {result.hero_image && (
