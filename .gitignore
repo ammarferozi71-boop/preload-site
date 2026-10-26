@@ -37,3 +37,6 @@ next-env.d.ts
 
 # downloaded at build time by scripts/fetch-images.mjs
 /public/images/games/
+
+# Local vulnerability audit snapshots
+.dependency-audit*.json

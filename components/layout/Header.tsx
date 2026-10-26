@@ -8,6 +8,7 @@ import { SITE_NAME } from '@/lib/site';
 
 const NAV_ITEMS = [
   { label: 'Releases', href: '/releases' },
+  { label: 'Time converter', href: '/tools/release-time' },
   { label: 'PC requirements', href: '/requirements' },
   { label: 'Install & preload', href: '/install' },
   { label: 'Updates', href: '/updates' },

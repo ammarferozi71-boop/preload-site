@@ -1,3 +1,4 @@
+import { safeJsonLd } from '@/lib/structured-data.mjs';
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import { CATEGORY_SLUGS } from '@/lib/types';
@@ -26,7 +27,8 @@ export async function generateStaticParams() {
   return VALID_CATEGORIES.map((slug) => ({ category: slug }));
 }
 
-export async function generateMetadata({ params }: { params: Params }): Promise<Metadata> {
+export async function generateMetadata({ params: paramsPromise }: { params: Promise<Params> }): Promise<Metadata> {
+  const params = await paramsPromise;
   const category = await getCategoryBySlug(params.category);
   if (!category) return { title: 'Category Not Found' };
 
@@ -43,7 +45,8 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
   };
 }
 
-export default async function CategoryPage({ params }: { params: Params }) {
+export default async function CategoryPage({ params: paramsPromise }: { params: Promise<Params> }) {
+  const params = await paramsPromise;
   if (!VALID_CATEGORIES.includes(params.category)) notFound();
 
   const category = await getCategoryBySlug(params.category);
@@ -72,7 +75,7 @@ export default async function CategoryPage({ params }: { params: Params }) {
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: safeJsonLd(jsonLd) }} />
 
       {/* Category Header */}
       <div className="border-b border-border bg-card/30">

@@ -17,7 +17,8 @@ export const revalidate = 300;
 
 type Params = { slug: string };
 
-export async function generateMetadata({ params }: { params: Params }): Promise<Metadata> {
+export async function generateMetadata({ params: paramsPromise }: { params: Promise<Params> }): Promise<Metadata> {
+  const params = await paramsPromise;
   const topic = await getTopicBySlug(params.slug);
   if (!topic) return { title: 'Topic Not Found' };
 
@@ -34,7 +35,8 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
   };
 }
 
-export default async function TopicPage({ params }: { params: Params }) {
+export default async function TopicPage({ params: paramsPromise }: { params: Promise<Params> }) {
+  const params = await paramsPromise;
   const topic = await getTopicBySlug(params.slug);
   if (!topic) notFound();
 

@@ -1,3 +1,4 @@
+import { safeJsonLd } from '@/lib/structured-data.mjs';
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import Image from 'next/image';
@@ -17,7 +18,8 @@ export const revalidate = 300;
 
 type Params = { slug: string };
 
-export async function generateMetadata({ params }: { params: Params }): Promise<Metadata> {
+export async function generateMetadata({ params: paramsPromise }: { params: Promise<Params> }): Promise<Metadata> {
+  const params = await paramsPromise;
   const author = await getAuthorBySlug(params.slug);
   if (!author) return { title: 'Author Not Found' };
 
@@ -34,7 +36,8 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
   };
 }
 
-export default async function AuthorPage({ params }: { params: Params }) {
+export default async function AuthorPage({ params: paramsPromise }: { params: Promise<Params> }) {
+  const params = await paramsPromise;
   const author = await getAuthorBySlug(params.slug);
   if (!author) notFound();
 
@@ -60,7 +63,7 @@ export default async function AuthorPage({ params }: { params: Params }) {
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: safeJsonLd(jsonLd) }} />
 
       <div className="border-b border-border bg-card/30">
         <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">

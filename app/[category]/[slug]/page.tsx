@@ -1,3 +1,4 @@
+import { safeJsonLd } from '@/lib/structured-data.mjs';
 import { ReadingBrief } from '@/components/editorial/ReadingBrief';
 import { notFound, redirect } from 'next/navigation';
 import type { Metadata } from 'next';
@@ -35,10 +36,11 @@ export async function generateStaticParams(): Promise<Params[]> {
 }
 
 export async function generateMetadata({
-  params,
+  params: paramsPromise,
 }: {
-  params: Params;
+  params: Promise<Params>;
 }): Promise<Metadata> {
+  const params = await paramsPromise;
   const article = await getArticleBySlug(params.slug);
   if (!article) return { title: 'Article Not Found' };
 
@@ -72,7 +74,8 @@ export async function generateMetadata({
   };
 }
 
-export default async function ArticlePage({ params }: { params: Params }) {
+export default async function ArticlePage({ params: paramsPromise }: { params: Promise<Params> }) {
+  const params = await paramsPromise;
   const article = await getArticleBySlug(params.slug);
   if (!article) notFound();
 
@@ -138,9 +141,9 @@ export default async function ArticlePage({ params }: { params: Params }) {
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-      {reviewJsonLd && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewJsonLd) }} />}
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: safeJsonLd(jsonLd) }} />
+      {reviewJsonLd && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: safeJsonLd(reviewJsonLd) }} />}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: safeJsonLd(breadcrumbJsonLd) }} />
 
       <article className="mx-auto max-w-4xl px-4 py-6 sm:px-6">
         {/* Breadcrumbs */}
